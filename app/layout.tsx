@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import GlobalAnimations from "@/utils/GlobalAnimations";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Buck & Bloom Cheese Co.",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/mlw6hvs.css" />
       </head>
       <Analytics></Analytics>
+      <SpeedInsights></SpeedInsights>
       <body className="flex-center-center flex-column">
         <GlobalAnimations></GlobalAnimations>
         
