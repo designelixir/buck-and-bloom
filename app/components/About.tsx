@@ -13,7 +13,7 @@ export default function About(){
                 <Image src="flora-3.svg" alt="floral detail" height={25} width={25} style={{ marginLeft: "25px" }} />
             </div>
             
-                <div className="panel flex-center-end flex-column basic-bg">
+                <div className="panel flex-center-end flex-column">
                     <div className="flex-center-start full-width scene">
                         <div className="greg cutout about-animate-1"></div>
                         <div className="staff cutout about-animate-1"></div>
@@ -22,21 +22,23 @@ export default function About(){
                         <div className="jade cutout about-animate-1"></div>
                         <div className="rhonda cutout about-animate-1"></div>
                     </div>
-                     <div className="about-text-wrapper basic-padding basic-margin centered-text about-text-wrapper-1 animate-in">
-                        <h3 className="cream-text">
+                     <div className="about-text-wrapper basic-padding basic-margin centered-text about-text-wrapper-1 animate-in flex-center-center flex-column">
+                        <Image src="/paintbrush-icon.svg" height={50} width={50} style={{marginBottom: '25px'}} alt="floral decor"></Image>
+                        <h3>
                             Carrying on the goat cheese legacy of Buena Vista, we are thrilled to be making cheese in an impressive facility that used to be known as Jumpin&apos; Good Goat Dairy. After several years lying dormant, we fired up all the equipment in Spring of 2025 and have been pasteurizing, culturing, cutting curd, and making wheels ever since. We love that we can continue to produce goat cheese in the Rocky Mountains.
                         </h3>
                     </div>
                    
                 </div>
 
-                <div className="panel flex-center-end flex-column basic-bg section-animation">
+                <div className="panel flex-center-end flex-column section-animation">
                     <div className="flex-end-spacebetween amanda-mtns about-animate-2">
                         <div className="cheeses cutout about-animate-2"></div>
                         <div className="cheeses-2 cutout about-animate-2"></div>
                     </div>
-                    <div className="about-text-wrapper basic-padding basic-margin centered-text about-text-wrapper-2 animate-in">
-                        <h3 className="cream-text">
+                    <div className="about-text-wrapper basic-padding basic-margin centered-text about-text-wrapper-2 animate-in flex-center-center flex-column">
+                        <Image src="/paintbrush-icon.svg" height={50} width={50} style={{marginBottom: '25px'}} alt="floral decor"></Image>
+                        <h3>
                             Our goat milk is sourced from farms in Trinidad, Colorado, from farmers who give incredible care to their herd. We are proud to craft cheese from some of the best quality goat milk in the state, made fresh as soon as the milk arrives at our doors.
                         </h3>
                     </div>
@@ -48,7 +50,7 @@ export default function About(){
             <style jsx>{`
             .panel { max-width: 100vw; padding: 50px 0; overflow-x: clip;}
             .cutout { background-size: contain; background-repeat: no-repeat;}
-            .about-text-wrapper {z-index: 5; background-image: url('/RuggedSquare(textured).png'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+            .about-text-wrapper {z-index: 5; background-image: url('/square-tan.png'); background-size: 100% 100%; background-repeat: no-repeat; background-position: center; }
             .about-text-wrapper-1 {margin-top: -150px}
             .about-text-wrapper-2 {margin-top: -50px;}
 

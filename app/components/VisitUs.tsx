@@ -20,7 +20,7 @@ export default function VisitUs() {
         You can now come for a visit! Come and shop our cheeses at the <Link href="https://share.google/cWO3BJQooefN6bzhX">Jumpin' Good Country Store</Link>, also offering local salami, crackers, goat fudge, gifts, horse tack, and more. 
         Meet our baby goats (hopefully future milk producers!) who were born this spring and are eager to meet you.
       </h3>
-      <div className="flex-center-center basic-padding">
+      <div className="flex-center-center basic-padding visit-us-button-wrapper">
           <Link target="_blank" style={{marginRight: '10px'}} href="https://www.google.com/maps/place/Jumpin%E2%80%99+Good+Country+Store+%26+Buck+n%E2%80%99+Bloom+Cheese+Shop/data=!4m2!3m1!1s0x0:0xfa6afe646a042e2a?sa=X&ved=1t:2428&ictx=111">
           <button>Jumpin' Good Country Store Hours</button>
           </Link>
