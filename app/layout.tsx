@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/mlw6hvs.css" />
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="nw0+SqP3HhOqWpda4kWy1g" async></script>
       </head>
       <Analytics></Analytics>
       <SpeedInsights></SpeedInsights>
