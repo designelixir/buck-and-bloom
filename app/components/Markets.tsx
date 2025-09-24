@@ -35,9 +35,7 @@ export default function Markets(){
             <div className="event flex-center-center basic-bg flex-column basic-padding">
                 <h2 className="centered-text">Vail Farmers Market</h2>
                 <h3 className="bold-text red-text">Sundays</h3>
-                <p className="centered-text">8am - 12pm<br></br>
-                    Fall hours - beginning Oct. 4th, 9am - 1pm
-                </p>
+                <p className="centered-text">9am - 3pm until October 5th</p>
                 <Link href="https://www.vailfarmersmarket.com/" target="_blank">
                     <button className="black-button">Details</button>
                 </Link>
