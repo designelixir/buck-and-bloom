@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeroText() {
 
   return (
-    <div className="hero-wrapper fade-in hero-wrapper-bg welcome-message flex-center-start flex-column">
+    <div className="hero-wrapper fade-in hero-wrapper-bg welcome-message flex-center-center flex-column">
         <h1 className="centered-text">Artisan cheese hand-crafted in Colorado&apos;s Highlands</h1>
         <h3 className="centered-text">
           Buck and Bloom Cheese Company is a small but mighty team of cheesemakers offering artisan goat cheeses to our home state of Colorado. 

@@ -118,7 +118,7 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 
 
 /* Hero */
-.hero-wrapper {width: 100vw; max-width: 100vw; min-height: 100vh;  padding: 150px 2.5vw 100px; min-height: 100vh; max-height: 100vh; overflow: clip; }
+.hero-wrapper {width: 100vw; max-width: 100vw; min-height: 100vh;  padding: 150px 2.5vw 25px; min-height: 100vh; max-height: 100vh; overflow: clip; }
 .hero-wrapper-bg {background-image: url('/mtns.svg'); background-size: auto 650px; background-position: center 100%; background-repeat: no-repeat;}
 .hero-wrapper h1 {font-size: 80px; font-family: var(--native-script); max-width: 700px; line-height: 70px;}
 .hero-wrapper h3 {padding: 0 10vw;}
