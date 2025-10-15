@@ -17,8 +17,7 @@ export default function VisitUs() {
           <Image src="flora-3.svg" alt="floral detail" height={25} width={25} style={{marginLeft: '25px'}}></Image>
       </div>
       <h3 className="centered-text cream-text">
-        You can now come for a visit! Come and shop our cheeses at the <Link href="https://share.google/cWO3BJQooefN6bzhX">Jumpin' Good Country Store</Link>, also offering local salami, crackers, goat fudge, gifts, horse tack, and more. 
-        Meet our baby goats (hopefully future milk producers!) who were born this spring and are eager to meet you.
+        You can now come for a visit! Come and shop our cheeses at the <Link href="https://share.google/cWO3BJQooefN6bzhX">Jumpin' Good Country Store</Link>, also offering local salami, crackers, goat fudge, gifts, horse tack, and more. Meet our young goats (hopefully future milk producers!) who were born spring of 2025 and are eager to meet you.
       </h3>
       <div className="flex-center-center basic-padding visit-us-button-wrapper">
           <Link target="_blank" style={{marginRight: '10px'}} href="https://www.google.com/maps/place/Jumpin%E2%80%99+Good+Country+Store+%26+Buck+n%E2%80%99+Bloom+Cheese+Shop/data=!4m2!3m1!1s0x0:0xfa6afe646a042e2a?sa=X&ved=1t:2428&ictx=111">

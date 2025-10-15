@@ -25,7 +25,8 @@ export default function About(){
                      <div className="about-text-wrapper basic-padding basic-margin centered-text about-text-wrapper-1 animate-in flex-center-center flex-column">
                         <Image src="/paintbrush-icon.svg" height={50} width={50} style={{marginBottom: '25px'}} alt="floral decor"></Image>
                         <h3>
-                            Carrying on the goat cheese legacy of Buena Vista, we are thrilled to be making cheese in an impressive facility that used to be known as Jumpin&apos; Good Goat Dairy. After several years lying dormant, we fired up all the equipment in Spring of 2025 and have been pasteurizing, culturing, cutting curd, and making wheels ever since. We love that we can continue to produce goat cheese in the Rocky Mountains.
+                            Carrying on the cheese legacy of Buena Vista, we are thrilled to be making cheese in an impressive facility that used to be known as Jumpin&apos; Good Goat Dairy. After several years lying dormant, we fired up all the equipment in Spring of 2025 and have been pasteurizing, culturing, cutting curd, and making wheels ever since. 
+                            We love that we can continue to produce goat cheese in the Rocky Mountains.
                         </h3>
                     </div>
                    
@@ -39,7 +40,7 @@ export default function About(){
                     <div className="about-text-wrapper basic-padding basic-margin centered-text about-text-wrapper-2 animate-in flex-center-center flex-column">
                         <Image src="/paintbrush-icon.svg" height={50} width={50} style={{marginBottom: '25px'}} alt="floral decor"></Image>
                         <h3>
-                            Our goat milk is sourced from farms in Trinidad, Colorado, from farmers who give incredible care to their herd. We are proud to craft cheese from some of the best quality goat milk in the state, made fresh as soon as the milk arrives at our doors.
+                            Our milk is sourced from several farms across Colorado. We are proud to craft cheese from some of the best quality milk in the state, made fresh as soon as the milk arrives at our doors. While our goat milk cheeses are available seasonally, our cow milk cheeses are available year round.
                         </h3>
                     </div>
                 </div>
