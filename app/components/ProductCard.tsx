@@ -2,16 +2,8 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
-
-interface ProductCardProps {
-  id: string;
-  shopifyProductId: string;
-  title: string;
-  description: string;
-  price: string;
-  mainImage: string;
-  images?: string[];
-}
+import Link from 'next/link';
+import { ProductCardProps } from '@/utils/Types';
 
 declare global {
   interface Window {
@@ -19,23 +11,13 @@ declare global {
   }
 }
 
-export default function ProductCard({
-  id,
-  shopifyProductId,
-  title,
-  description,
-  price,
-  mainImage,
-  images = [],
-}: ProductCardProps) {
+export default function ProductCard({ id, shopifyProductId, title, description, price, mainImage, images = [] }: ProductCardProps) {
   const buttonContainerRef = useRef<HTMLDivElement>(null);
   const scriptLoadedRef = useRef(false);
 
   useEffect(() => {
     if (scriptLoadedRef.current) return;
-
     const scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-
     function loadScript() {
       const script = document.createElement('script');
       script.async = true;
@@ -59,26 +41,23 @@ export default function ProductCard({
           moneyFormat: '%24%7B%7Bamount%7D%7D',
           options: {
             product: {
-              styles: {
-                product: {
-                  '@media (min-width: 601px)': {
-                    'max-width': 'calc(25% - 20px)',
-                    'margin-left': '20px',
-                    'margin-bottom': '50px'
-                  }
-                },
-                button: {
-                  'font-family': 'Lora, serif',
-                  'font-weight': 'bold',
+              styles: { product: { '@media (min-width: 601px)': 
+                { 'max-width': 'calc(25% - 20px)', 
+                  'margin-left': '20px', 
+                  'margin-bottom': '50px' } 
+                }, 
+              button: {
+                  'font-family': 'Lora',
+                  'background-image': 'url("https://www.buckandbloomcheese.com/red-nav.png")',
+                  'background-size': '100% 100%',
+                  'text-transform': 'uppercase',
+                  'font-weight': '700',
+                  'margin': '0',
+                  'opacity': '8',
                   ':hover': {
-                    'background-color': '#c11c22'
+                    'opacity': '1'
                   },
-                  'background-color': '#d61f26',
-                  ':focus': {
-                    'background-color': '#c11c22'
-                  }
-                }
-              },
+                } },
               contents: {
                 img: false,
                 title: false,
@@ -89,15 +68,7 @@ export default function ProductCard({
               },
               googleFonts: ['Lora']
             },
-            productSet: {
-              styles: {
-                products: {
-                  '@media (min-width: 601px)': {
-                    'margin-left': '-20px'
-                  }
-                }
-              }
-            },
+           
             modalProduct: {
               contents: {
                 img: false,
@@ -114,15 +85,12 @@ export default function ProductCard({
                   }
                 },
                 button: {
-                  'font-family': 'Lora, serif',
-                  'font-weight': 'bold',
+                  'font-family': 'Lora',
+                  'background-image': 'url("https://www.buckandbloomcheese.com/red-nav.png")',
+                  'opacity': '8',
                   ':hover': {
-                    'background-color': '#c11c22'
+                    'opacity': '1'
                   },
-                  'background-color': '#d61f26',
-                  ':focus': {
-                    'background-color': '#c11c22'
-                  }
                 }
               },
               googleFonts: ['Lora'],
@@ -134,14 +102,12 @@ export default function ProductCard({
             cart: {
               styles: {
                 button: {
-                  'font-family': 'Lora, serif',
-                  'font-weight': 'bold',
+                  'font-family': 'Lora',
+                  'background-image': 'url("https://www.buckandbloomcheese.com/red-nav.png")',
+                  'background-size': '100% 100%',
+                  'opacity': '0.8',
                   ':hover': {
-                    'background-color': '#c11c22'
-                  },
-                  'background-color': '#d61f26',
-                  ':focus': {
-                    'background-color': '#c11c22'
+                    'opacity': '1'
                   }
                 }
               },
@@ -154,14 +120,12 @@ export default function ProductCard({
             toggle: {
               styles: {
                 toggle: {
-                  'font-family': 'Lora, serif',
-                  'font-weight': 'bold',
-                  'background-color': '#d61f26',
+                  'font-family': 'Lora',
+                  'background-image': 'url("https://www.buckandbloomcheese.com/red-nav.png")',
+                  'background-size': 'cover',
+                  'opacity': '0.8',
                   ':hover': {
-                    'background-color': '#c11c22'
-                  },
-                  ':focus': {
-                    'background-color': '#c11c22'
+                    'opacity': '1'
                   }
                 }
               },
@@ -186,70 +150,19 @@ export default function ProductCard({
   }, [id, shopifyProductId]);
 
   return (
-    <div
-      style={{
-        border: '1px solid #e0e0e0',
-        borderRadius: '8px',
-        padding: '16px',
-        maxWidth: '350px',
-        backgroundColor: '#ffffff',
-      }}
-    >
-      <div
-        style={{
-          width: '100%',
-          height: '300px',
-          position: 'relative',
-          marginBottom: '16px',
-          overflow: 'hidden',
-          borderRadius: '4px',
-        }}
-      >
-        <Image
-          src={mainImage}
-          alt={title}
-          fill
-          style={{ objectFit: 'cover' }}
-        />
+    <div className="product-card">
+      <div className="product-card-image">
+        <Link href={`/shop/` + id}>
+        <Image src={mainImage} alt={title} fill style={{ objectFit: 'cover' }} />
+        </Link>
       </div>
-
-      <h3
-        style={{
-          fontSize: '20px',
-          fontWeight: 600,
-          marginBottom: '8px',
-          color: '#333',
-        }}
-      >
-        {title}
-      </h3>
-
-      <p
-        style={{
-          fontSize: '14px',
-          color: '#666',
-          marginBottom: '12px',
-          lineHeight: '1.5',
-        }}
-      >
-        {description}
-      </p>
-
-      <p
-        style={{
-          fontSize: '18px',
-          fontWeight: 'bold',
-          color: '#d61f26',
-          marginBottom: '16px',
-        }}
-      >
-        {price}
-      </p>
-
-      <div
-        id={`product-component-${id}`}
-        ref={buttonContainerRef}
-      ></div>
+      <h3>{title}</h3>
+      <p className="product-card-description">{description}</p>
+      <p className="product-card-price">{price}</p>
+      <div className="flex-center-center flex-wrap">
+        <div id={`product-component-${id}`} ref={buttonContainerRef}></div>
+        <Link href={`/shop/` + id}><button className="black-button">Details</button></Link>
+      </div>
     </div>
   );
 }
