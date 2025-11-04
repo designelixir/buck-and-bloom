@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
+import AnnouncementBar from "./AnnouncementBanner";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,11 +40,19 @@ export default function Nav() {
 
   return (
     <nav className={`site-nav fade-in flex-start-center flex-column`}>
+      <AnnouncementBar 
+        href="/shop" 
+        message="Purchase our cheese online - click here!"
+      />
       <div className="nav-inner flex-center-spacebetween full-width">
         <div className="desktop flex-center-spacebetween mobile-hide">
+          
+          <a id="shopLink" href="/shop" className="nav-link shop-link">Shop</a>
+          <Image src="flora.svg" alt="floral detail" height={25} width={25} />
           <a id="marketsLink" href="/#markets" className="nav-link markets-link">Markets</a>
           <Image src="flora.svg" alt="floral detail" height={25} width={25} />
           <a id="visitLink" href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
+          
         </div>
 
         <div className="mobile-left flex-center-center mobile-show">
@@ -61,9 +70,13 @@ export default function Nav() {
         
 
         <div className="desktop flex-center-spacebetween mobile-hide">
+          
+          
+          
           <a id="aboutLink" href="/#about" className="nav-link about-link">About</a>
           <Image src="flora.svg" alt="floral detail" height={25} width={25} />
           <a id="contactLink" href="/#contact" className="nav-link contact-link">Contact</a>
+          
         </div>
 
         <div className="mobile-right flex-center-center mobile-show">
@@ -82,9 +95,11 @@ export default function Nav() {
       {open && (
         <div className="mobile-menu flex-center-center flex-column mobile-show">
           <a id="marketsLink" onClick={handleLinkClick} href="/#markets" className="nav-link markets-link">Markets</a>
+          <a id="shopLink" href="/shop" className="nav-link shop-link">Shop</a>
           <a id="visitLink" onClick={handleLinkClick} href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
           <a id="aboutLink" onClick={handleLinkClick} href="/#about" className="nav-link about-link">About</a>
           <a id="contactLink" onClick={handleLinkClick} href="/#contact" className="nav-link contact-link">Contact</a>
+          
         </div>
       )}
       

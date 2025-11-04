@@ -1,13 +1,4 @@
 * {box-sizing: border-box; font-family: var(--reader-font); scroll-behavior: smooth;}
-/* Lora */
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal;}
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-Italic.ttf") format("truetype"); font-weight: 400; font-style: italic;}
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal;}
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-MediumItalic.ttf") format("truetype"); font-weight: 500; font-style: italic;}
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-SemiBold.ttf") format("truetype"); font-weight: 600; font-style: normal;}
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-SemiBoldItalic.ttf") format("truetype"); font-weight: 600; font-style: italic;}
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal;}
-@font-face {font-family: "Lora"; src: url("/fonts/Lora/Lora-BoldItalic.ttf") format("truetype"); font-weight: 700; font-style: italic;}
 
 /* Native Record */
 @font-face {font-family: "Native Record Sans"; src: url("/fonts/Native Record/Native Record Sans.otf") format("opentype"); font-weight: normal; font-style: normal;}
@@ -16,6 +7,8 @@
 
 :root {
     --cream: #F8F8CD;
+    --tan: #E2DACA;
+    --tan2: #CEC0A6;
     --red: #d61f26;
     --black: #191919;
     --native-script: 'Native Record Script', sans-serif;
@@ -91,6 +84,7 @@ address {font-size: 16px; margin: 10px 0; font-style: normal;}
 
 a {color: inherit; font-family: inherit;}
 a:hover { transform: scale(1.01); color: var(--red);}
+.no-hover-grow:hover {transform: unset!important;}
 
 label {font-family: var(--native-record); font-size: 16px; margin: 10px 0; padding: 0; }
 input {padding: 10px; background-color: rgba(255,255,255,0.25); border: 1px solid black; border-radius: 2px; min-width: 300px;}
@@ -134,13 +128,16 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 
 /* Navigation */
 .site-nav {width: 100vw;  backdrop-filter: blur(1px); position: fixed; top: 0; z-index: 100;}
+.announcement-bar-container {width: 100vw; position: relative; background: var(--red); }
+.announcement-bar-inner { margin: 0; padding: 0;}
+.close-button {margin: 0; background-image: unset;}
 .nav-inner {width: 100vw; min-height: 170px; z-index: 2; padding: 0 25px; background-image: url('/black-nav.png'); background-size: calc(100% - 20px) 80px; background-repeat: no-repeat; background-position: center}
 .mobile-show {display: none;}
 .mobile-menu {width: 95vw; padding: 60px 25px 25px; background-image: url('/RuggedSquare(textured).png'); background-size: cover; transform: translateY(-45px);}
 .nav-link {padding: 0px 25px; animation: fade-in 1s linear both; font-family: var(--native-sans); white-space: nowrap; font-size: 18px; color: var(--cream); flex:1; text-align: center; text-decoration: unset;}
 .nav-link:hover {cursor: pointer; text-decoration: underline!important;}
 .active-link {color: var(--red)!important;}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .mobile-hide {display: none;}
   .mobile-show {display: flex;}
   .nav-link {margin: 10px 0;}
@@ -150,14 +147,18 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 
 /* Markets */
 .market-grid {align-items: stretch}
-                .event { background-image: url('/square-tan.png'); border: 2px solid var(--cream); border-radius: 2px; background-size: 100% 100%; margin: 10px; max-width: 35%; min-width: 260px;}
-                .event-content {padding: 0 15px 15px 15px}
-                .event-title {font-size: 20px; line-height: 1.1;}
-                .date-tag-wrapper { width: 100%; height: 120px; background-size: auto 100px; background-position: center; background-repeat: no-repeat;}
-                .date-tag { background-image: url('/black-textured.png'); min-width: 80px; color: var(--cream); background-size: 100% 100%; margin: 10px 0 0 -10px;  padding: 5px 5px;}
+.event { background-image: url('/beige-square.png'); border: 2px solid var(--tan); border-radius: 2px; background-size: 100% 100%; margin: 10px; max-width: 35%; min-width: 260px;}
+.event-content {padding: 0 15px 15px 15px}
+.event-title {font-size: 20px; line-height: 1.1;}
+.date-tag-wrapper { width: 100%; height: 120px; background-size: auto 100px; background-position: center; background-repeat: no-repeat;}
+.date-tag { background-image: url('/black-textured.png'); min-width: 80px; color: var(--cream); background-size: 100% 100%; margin: 10px 0 0 -10px;  padding: 5px 5px;}
 @media only screen and (max-width: 600px) {
   .event {max-width: unset; width: 100%; min-width: 90%;}
 }
+
+/* Shop Page */
+.shop-header {min-height: 200px; margin-top: 200px; border: 1px solid red; }
+
 
 .fade-in{ -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}

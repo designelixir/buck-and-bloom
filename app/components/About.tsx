@@ -51,7 +51,7 @@ export default function About(){
             <style jsx>{`
             .panel { max-width: 100vw; padding: 50px 0; overflow-x: clip;}
             .cutout { background-size: contain; background-repeat: no-repeat;}
-            .about-text-wrapper {z-index: 5; background-image: url('/square-tan.png'); background-size: 100% 100%; background-repeat: no-repeat; background-position: center; }
+            .about-text-wrapper {z-index: 5; background-image: url('/beige-square.png'); background-size: 100% 100%; background-repeat: no-repeat; background-position: center; }
             .about-text-wrapper-1 {margin-top: -150px}
             .about-text-wrapper-2 {margin-top: -50px;}
 
