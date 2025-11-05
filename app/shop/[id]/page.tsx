@@ -37,19 +37,22 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         <Link className="no-link-styling" href="/shop"><h3 className="red-text native-record">&larr; Back to Shop</h3></Link>
         <div style={{padding: '25px 0'}} className="centered-text">
           <h1 className="centered-text no-text-spacing">{product.title}</h1>
-          {product.subtitle && <h2 className="product-page-subtitle no-text-spacing">{product.subtitle}</h2>}
+          
         </div>
+        <div className="flex-start-start full-width" style={{maxWidth: '98vw'}}>
+          <ImageSlideshow images={[product.mainImage, ...product.images]} title={product.title} />
+        </div>
+        {product.subtitle && <h2 className="product-page-subtitle no-text-spacing">{product.subtitle}</h2>}
         <div className="centered-text" dangerouslySetInnerHTML={{ __html: `${product.description1} ${product.description2}` }} />
         <p className="centered-text product-card-price">{product.price}</p>
         <ShopifyBuyButton shopifyProductId={product.shopifyProductId} id={product.id} />
       </section>
-      <div className="flex-start-start full-width" style={{maxWidth: '98vw'}}>
-        <ImageSlideshow images={[product.mainImage, ...product.images]} title={product.title} />
-      </div>
       <section className="basic-padding">
-        <h3 className="red-text native-record">Product Details</h3>
+        <h3 className="red-text native-record">Additional Product Details</h3>
         <div dangerouslySetInnerHTML={{ __html: product.fullDescription }} />
       </section>
+      
+      
 
     </main>
   );
