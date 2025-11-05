@@ -12,9 +12,9 @@ export default function VisitUs() {
         <Image src="/windmill-cream.svg" height={100} width={50} style={{margin: '25px'}} alt="windmill graphic"></Image>
       </div>
       <div className="flex-center-center">
-          <Image src="flora-2.svg" alt="floral detail" height={25} width={25} style={{marginRight: '25px'}}></Image>
+          <Image src="/flora-2.svg" alt="floral detail" height={25} width={25} style={{marginRight: '25px'}}></Image>
           <h1 className="centered-text cream-text">Visit Us</h1>
-          <Image src="flora-3.svg" alt="floral detail" height={25} width={25} style={{marginLeft: '25px'}}></Image>
+          <Image src="/flora-3.svg" alt="floral detail" height={25} width={25} style={{marginLeft: '25px'}}></Image>
       </div>
       <h3 className="centered-text cream-text">
         You can now come for a visit! Come and shop our cheeses at the <Link href="https://share.google/cWO3BJQooefN6bzhX">Jumpin' Good Country Store</Link>, also offering local salami, crackers, goat fudge, gifts, horse tack, and more. Meet our young goats (hopefully future milk producers!) who were born spring of 2025 and are eager to meet you.

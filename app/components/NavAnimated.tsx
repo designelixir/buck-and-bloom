@@ -62,7 +62,7 @@ export default function Nav2() {
       <div className="nav-inner flex-center-spacebetween full-width">
         <div className="desktop flex-center-spacebetween mobile-hide">
           <a id="marketsLink" href="#markets" className="nav-link markets-link">Markets</a>
-          <Image src="flora.svg" alt="floral detail" height={25} width={25} />
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="visitLink" href="#visit-us" className="nav-link visit-us-link">Visit Us</a>
         </div>
 
@@ -80,12 +80,12 @@ export default function Nav2() {
             <Image ref={logoRef} src="/Buck&Bloom-TileLogo.png" alt="Buck & Bloom Tile Logo" width={150} height={150} priority />
           </Link>
         ) : (
-          <Image ref={spacerRef} src="flora.svg" alt="floral detail" className="nav-logo-spacer" height={25} width={25} />
+          <Image ref={spacerRef} src="/flora.svg" alt="floral detail" className="nav-logo-spacer" height={25} width={25} />
         )}
 
         <div className="desktop flex-center-spacebetween mobile-hide">
           <a id="aboutLink" href="#about" className="nav-link about-link">About</a>
-          <Image src="flora.svg" alt="floral detail" height={25} width={25} />
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="contactLink" href="#contact" className="nav-link contact-link">Contact</a>
         </div>
 

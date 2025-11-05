@@ -13,9 +13,9 @@ export default function Markets({ events = [] }: MarketGridProps) {
         <section id="markets">
             <SectionObserver sectionId="markets" />
             <div className="flex-center-center">
-                <Image src="flora-2.svg" alt="floral detail" height={25} width={25} style={{marginRight: '25px'}}></Image>
+                <Image src="/flora-2.svg" alt="floral detail" height={25} width={25} style={{marginRight: '25px'}}></Image>
                 <h2 className="centered-text">Markets, Events &amp; Hours</h2>
-                <Image src="flora-3.svg" alt="floral detail" height={25} width={25} style={{marginLeft: '25px'}}></Image>
+                <Image src="/flora-3.svg" alt="floral detail" height={25} width={25} style={{marginLeft: '25px'}}></Image>
             </div>
             <div>
                 <h4 className="centered-text red-text basic-padding-top-bottom">Farmer's Markets</h4>

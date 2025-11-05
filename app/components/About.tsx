@@ -8,9 +8,9 @@ export default function About(){
         <section id="about" style={{padding: "75px 0 25px"}}>
             <SectionObserver sectionId="about"></SectionObserver>
             <div id="aboutTitle" className="flex-center-center" style={{ position: "relative", zIndex: 5 }}>
-                <Image src="flora-2.svg" alt="floral detail" height={25} width={25} style={{ marginRight: "25px" }} />
+                <Image src="/flora-2.svg" alt="floral detail" height={25} width={25} style={{ marginRight: "25px" }} />
                 <h1 className="centered-text about-title">About Us</h1>
-                <Image src="flora-3.svg" alt="floral detail" height={25} width={25} style={{ marginLeft: "25px" }} />
+                <Image src="/flora-3.svg" alt="floral detail" height={25} width={25} style={{ marginLeft: "25px" }} />
             </div>
             
                 <div className="panel flex-center-end flex-column">

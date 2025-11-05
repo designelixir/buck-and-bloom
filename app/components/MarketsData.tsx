@@ -38,7 +38,7 @@ export const eventData = [
     {
         title: "Winterfest Westminster",
         showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">NOV. <br/> 22</h4></>,
+        eventType: <><h4 className="no-text-spacing centered-text">NOV. <br/> 15</h4></>,
         time: <><strong>4:30pm - 7:30pm</strong></>,
         location: "Orchard Town Center",
         locationLink: "https://share.google/MeWEVj6QlICmKkRKz",

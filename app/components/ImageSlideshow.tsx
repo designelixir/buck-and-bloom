@@ -114,7 +114,8 @@ export default function ImageSlideshow({ images, title }: ImageSlideshowProps) {
             </div>
             ))}
         </div>
-        <div className="flex-center-center">
+        <p className="centered-text image-slideshow-description"><i>Swipe to see additional photos and videos.</i></p>
+        <div className="flex-center-center image-slideshow-buttons-container">
             <button onClick={() => handleArrowClick('left')} className="image-slideshow-nav-button" aria-label="Previous image" style={{ opacity: showLeftArrow ? 1 : 0.5 }} > ← </button>
             <button onClick={() => handleArrowClick('right')} className="image-slideshow-nav-button" aria-label="Next image" style={{ opacity: showRightArrow ? 1 : 0.5 }} > → </button>
         </div>

@@ -48,9 +48,9 @@ export default function Nav() {
         <div className="desktop flex-center-spacebetween mobile-hide">
           
           <a id="shopLink" href="/shop" className="nav-link shop-link">Shop</a>
-          <Image src="flora.svg" alt="floral detail" height={25} width={25} />
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="marketsLink" href="/#markets" className="nav-link markets-link">Markets</a>
-          <Image src="flora.svg" alt="floral detail" height={25} width={25} />
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="visitLink" href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
           
         </div>
@@ -74,7 +74,7 @@ export default function Nav() {
           
           
           <a id="aboutLink" href="/#about" className="nav-link about-link">About</a>
-          <Image src="flora.svg" alt="floral detail" height={25} width={25} />
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="contactLink" href="/#contact" className="nav-link contact-link">Contact</a>
           
         </div>
