@@ -17,7 +17,7 @@ export default function ShopPage() {
         <h1 className="centered-text">Shop Cheese</h1>
         <p className="centered-text">Here is a description about buying cheese from us.</p>
       </section>
-      <section className="product-grid flex-start-start flex-wrap">
+      <section className="product-grid flex-start-start flex-wrap section-no-padding">
         <ProductGrid></ProductGrid>
 
       </section>

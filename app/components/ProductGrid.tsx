@@ -12,10 +12,9 @@ export default function ProductGrid() {
           id={product.id}
           shopifyProductId={product.shopifyProductId}
           title={product.title}
-          description={product.description}
+          description1={product.description1}
           price={product.price}
           mainImage={product.mainImage}
-          images={product.images}
         />
       ))}
     </div>

@@ -3,6 +3,9 @@
 import Nav from "@/app/components/Nav";
 import { productsData } from "@/utils/productData";
 import { use, useEffect, useState } from "react";
+import Link from "next/link";
+import ImageSlideshow from "@/app/components/ImageSlideshow";
+import ShopifyBuyButton from "@/app/components/ShopifyBuyButton";
 
 export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
@@ -18,8 +21,10 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
     return (
       <main className="flex-center-center flex-column fade-in">
         <Nav></Nav>
-        <section className="basic-padding">
-          <h1 className="centered-text">Product not found</h1>
+        <section className="flex-center-center flex-column" style={{height: '100vh', padding: '200px 50px 50px'}}>
+          <h1 className="centered-text">Oh no! This product doesn&apos;t exist.</h1>
+          <div className="missing-cheese"></div>
+          <button><Link href="/shop">Return to shop?</Link></button>
         </section>
       </main>
     );
@@ -28,18 +33,24 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
   return (
     <main className="flex-center-center flex-column fade-in">
       <Nav></Nav>
-      <section className="shop-header basic-padding">
-        <h1 className="centered-text">{product.title}</h1>
-        <p className="centered-text">{product.description}</p>
-        <p className="centered-text">{product.price}</p>
+      <section className="shop-header basic-padding flex-center-center flex-column">
+        <Link className="no-link-styling" href="/shop"><h3 className="red-text native-record">&larr; Back to Shop</h3></Link>
+        <div style={{padding: '25px 0'}} className="centered-text">
+          <h1 className="centered-text no-text-spacing">{product.title}</h1>
+          {product.subtitle && <h2 className="product-page-subtitle no-text-spacing">{product.subtitle}</h2>}
+        </div>
+        <div className="centered-text" dangerouslySetInnerHTML={{ __html: `${product.description1} ${product.description2}` }} />
+        <p className="centered-text product-card-price">{product.price}</p>
+        <ShopifyBuyButton shopifyProductId={product.shopifyProductId} id={product.id} />
       </section>
-      <section className="product-grid flex-start-start flex-wrap">
-        {/* Display your product images and details here */}
-        <img src={product.mainImage} alt={product.title} />
-        {product.images.map((img: string, index: number) => (
-          <img key={index} src={img} alt={`${product.title} ${index + 1}`} />
-        ))}
+      <div className="flex-start-start full-width" style={{maxWidth: '98vw'}}>
+        <ImageSlideshow images={[product.mainImage, ...product.images]} title={product.title} />
+      </div>
+      <section className="basic-padding">
+        <h3 className="red-text native-record">Product Details</h3>
+        <div dangerouslySetInnerHTML={{ __html: product.fullDescription }} />
       </section>
+
     </main>
   );
 }

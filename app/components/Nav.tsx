@@ -94,8 +94,8 @@ export default function Nav() {
 
       {open && (
         <div className="mobile-menu flex-center-center flex-column mobile-show">
-          <a id="marketsLink" onClick={handleLinkClick} href="/#markets" className="nav-link markets-link">Markets</a>
           <a id="shopLink" href="/shop" className="nav-link shop-link">Shop</a>
+          <a id="marketsLink" onClick={handleLinkClick} href="/#markets" className="nav-link markets-link">Markets</a>
           <a id="visitLink" onClick={handleLinkClick} href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
           <a id="aboutLink" onClick={handleLinkClick} href="/#about" className="nav-link about-link">About</a>
           <a id="contactLink" onClick={handleLinkClick} href="/#contact" className="nav-link contact-link">Contact</a>
