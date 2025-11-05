@@ -3,7 +3,7 @@ import { productsData } from '@/utils/productData';
 
 export default function ProductGrid() {
   return (
-    <div className="flex-start-start flex-wrap" >
+    <div className="flex-start-center flex-wrap" >
       {productsData.map((product) => (
         <ProductCard
           key={product.id}
