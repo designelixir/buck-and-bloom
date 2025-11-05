@@ -23,7 +23,7 @@ export const productsData = [
       <li><strong><a class="no-link-styling red-text" href="https://www.ilporcellinodenver.com/" target="_blank" rel="noopener noreferrer">Il Porcellino</a> Calabrese Salami</strong>- 4.5oz. - Dry aged Salami made in Basalt, CO. Italian Inspired Salami Seasoned with Sweet and Dry Vermouth and Calabrian Chiles. A classic Italian Salami indigenous to the Calabrian region of Southern Italy. </li>
     </ul> 
 `, 
-    price: '$85.00',
+    price: '$90',
     mainImage: '/products/HolidayCheeseboard-Spread.jpg',
     images: [
       '/products/HolidayCheeseboard-Details.jpg',

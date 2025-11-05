@@ -9,6 +9,7 @@
     --cream: #F8F8CD;
     --tan: #E2DACA;
     --tan2: #CEC0A6;
+    --tan3: #C4B59B;
     --red: #d61f26;
     --black: #191919;
     --native-script: 'Native Record Script', sans-serif;
@@ -105,7 +106,7 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 
 .hover:hover {cursor: pointer; transform: scale(1.05);}
 .hover {cursor: pointer;}
-.box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.5);}
+.box-shadow {box-shadow: 2px 2px 2px rgba(0,0,0,0.15);}
 .text-shadow {text-shadow: 0 0 2px rgba(0,0,0,0.5);}
 .centered-text {text-align: center!important;}
 .active-link {text-decoration: underline;}
@@ -149,7 +150,7 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 
 /* Markets */
 .market-grid {align-items: stretch}
-.event { background-image: url('/beige-square.png'); border: 2px solid var(--tan); border-radius: 2px; background-size: 100% 100%; margin: 10px; max-width: 35%; min-width: 260px;}
+.event { background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); border-radius: 5px; background-size: 100% 100%; margin: 10px; max-width: 35%; min-width: 260px;}
 .event-content {padding: 0 15px 15px 15px}
 .event-title {font-size: 20px; line-height: 1.1;}
 .date-tag-wrapper { width: 100%; height: 120px; background-size: auto 100px; background-position: center; background-repeat: no-repeat;}

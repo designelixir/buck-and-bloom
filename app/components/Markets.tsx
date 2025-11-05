@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SectionObserver from "./SectionObserver";
 import MarketGrid from "./MarketGrid";
-import { marketData, eventData } from "./MarketsData";
+import { marketData, eventData } from "@/utils/marketsData";
 import { MarketGridProps } from "@/types/globalTypes";
 
 

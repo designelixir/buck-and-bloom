@@ -3,9 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ProductCardProps } from '@/utils/Types';
-import ShopifyBuyButton from './ShopifyBuyButton';
 
-export default function ProductCard({ id, shopifyProductId, title, description1, price, mainImage }: ProductCardProps) {
+export default function ProductCard({ id, title, description1, price, mainImage }: ProductCardProps) {
   return (
     <div className="product-card">
       <div className="product-card-image">
@@ -19,9 +18,7 @@ export default function ProductCard({ id, shopifyProductId, title, description1,
       
       
       <div className="flex-center-center flex-column">
-      <Link href={`/shop/${id}`} className="red-text">Product Details &rarr;</Link>  
-        
-        <ShopifyBuyButton shopifyProductId={shopifyProductId} id={id} />
+      <Link href={`/shop/${id}`} className="red-text"><button>Click for Details </button></Link>  
       </div>
     </div>
   );

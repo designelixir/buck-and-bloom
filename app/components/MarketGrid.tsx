@@ -10,7 +10,7 @@ export default function MarketGrid({ events = [] }: MarketGridProps) {
         <>
             <div className="flex-start-center flex-wrap market-grid">
                 {events.map((event, index) => (
-                    <div key={index} className="event flex-center-center basic-bg flex-column" style={{maxWidth: event.showDate ? '25%' : '35%'}}>
+                    <div key={index} className="event box-shadow flex-center-center basic-bg flex-column" style={{maxWidth: event.showDate ? '25%' : '35%'}}>
                         <div className="date-tag-wrapper flex-start-start no-flex-grow" style={{ backgroundImage: event.eventImage, padding: event.showDate ? '2px 5px' : '10px -2px' }}>
                             {event.showDate ? <span className="date-tag">{event.eventType}</span> : <></>}
                         </div>
