@@ -10,7 +10,7 @@ import ProductSummary from "./components/ProductSummary";
 export default function Home() {
   return (
     <main className="flex-center-center flex-column fade-in">
-      <Nav></Nav>
+      
       <HeroText></HeroText>
       <ProductSummary></ProductSummary>
       <Markets/>

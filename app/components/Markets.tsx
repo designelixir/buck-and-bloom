@@ -10,7 +10,7 @@ import { MarketGridProps } from "@/types/globalTypes";
 
 export default function Markets({ events = [] }: MarketGridProps) {
     return (
-        <section id="markets">
+        <section id="markets" style={{paddingTop: '120px'}}>
             <SectionObserver sectionId="markets" />
             <div className="flex-center-center">
                 <Image src="/flora-2.svg" alt="floral detail" height={25} width={25} style={{marginRight: '25px'}}></Image>

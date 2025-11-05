@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function About(){
    
     return(
-        <section id="about" style={{padding: "75px 0 25px"}}>
+        <section id="about" style={{padding: "120px 0 25px"}}>
             <SectionObserver sectionId="about"></SectionObserver>
             <div id="aboutTitle" className="flex-center-center" style={{ position: "relative", zIndex: 5 }}>
                 <Image src="/flora-2.svg" alt="floral detail" height={25} width={25} style={{ marginRight: "25px" }} />

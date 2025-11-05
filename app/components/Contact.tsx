@@ -6,7 +6,7 @@ import SectionObserver from "./SectionObserver";
 export default function Contact() {
 
   return (
-    <section id="contact" style={{ padding: "50px 2.5vw"}}>
+    <section id="contact" style={{ padding: "120px 2.5vw 50px"}}>
       <SectionObserver sectionId="contact"></SectionObserver>
         <div className="flex-center-center">
             <Image src="/flora-2.svg" alt="floral detail" height={25} width={25} style={{marginRight: '25px'}}></Image>

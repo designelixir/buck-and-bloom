@@ -6,7 +6,7 @@ import SectionObserver from "./SectionObserver";
 export default function VisitUs() {
 
   return (
-    <section id="visit-us" className="textured-bg-black" style={{ padding: "50px 2.5vw"}}>
+    <section id="visit-us" className="textured-bg-black" style={{ padding: "120px 2.5vw"}}>
       <SectionObserver sectionId="visit-us" />
       <div className="flex-center-center">
         <Image src="/windmill-cream.svg" height={100} width={50} style={{margin: '25px'}} alt="windmill graphic"></Image>
