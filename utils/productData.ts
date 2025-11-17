@@ -1,37 +1,5 @@
 export const productsData = [
   {
-    id: 'holiday-cheese-board-bundle',
-    shopifyProductId: '10783666012463',
-    title: 'Holiday Cheese Board Bundle',
-    description1: `Gather with your family this holiday season and enjoy a selection of our delicious artisanal cheeses! We've chosen a wonderful variety of spreadable, soft and creamy, and hard cheeses to make any charcuterie board complete.` ,
-    description2: `Gourmet Colorado-made crackers and salami are included to pair perfectly with our cheeses. The bundle will be ready to cut and assemble and will be enough to feed 8-12 people.`,
-   fullDescription: `
-    <p><strong>All orders will ship on November 17th to arrive with ample time before Thanksgiving.</strong> 
-        Please select a shipping options with 2 business days or less estimate. For most Colorado orders, UPS Ground will be sufficient. 
-        If you are able to select 2 Day Air Shipping, please select it as the cheese will need to stay cold. 
-        Local pickup is also available at Buck and Bloom Cheese Co. on Tuesday, November 18th from 9-4pm. 
-        If you are unable to make that pickup window please contact us to make separate accommodations at <a href="mailto:buckandbloomcheese@gmail.com">buckandbloomcheese@gmail.com</a>.
-    </p>
-    <p>Bundle includes:</p>
-    <ul>
-      <li><strong>Mont Creme Camembert</strong>- 8-10 oz. - Similar to Brie. Cow's Milk cheese with a white rind a decadent, creamy texture. </li>
-      <li><strong>Hibiscus Honey Fromage Blanc</strong>- 8 oz. - A soft, bright, spreadable cow's milk cheese with a hint of sweetness and a beautiful pink color. </li>
-      <li><strong>Garlic Herb Fromage Blanc</strong>- 8 oz. - A soft, spreadable cow's milk cheese with a savory, garlicy flavor. </li>
-      <li><strong>Hatch Chili Pepperjack</strong>- 5-6oz - A hard cow's milk cheese with Hatch Chiles. Cave aged for 5 weeks. </li>
-      <li><strong>Goat Manchego</strong>- 5-6oz - A hard goat's milk cheese with a tangy, salty flavor. Cave aged for 90 days. </li>
-      <li><strong><a class="no-link-styling red-text" href="https://fullstopbakery.com/" target="_blank" rel="noopener noreferrer">Full Stop</a> Olive Oil & Sea Salt Crackers</strong>- 4.2oz. - Sourdough Crackers made in small batches in Boulder, CO. </li>
-      <li><strong><a class="no-link-styling red-text" href="https://www.ilporcellinodenver.com/" target="_blank" rel="noopener noreferrer">Il Porcellino</a> Calabrese Salami</strong>- 4.5oz. - Dry aged Salami made in Basalt, CO. Italian Inspired Salami Seasoned with Sweet and Dry Vermouth and Calabrian Chiles. A classic Italian Salami indigenous to the Calabrian region of Southern Italy. </li>
-    </ul> 
-`, 
-    price: '$89',
-    mainImage: '/products/HolidayCheeseboard-Spread.jpg',
-    images: [
-      '/products/HolidayCheeseboard-Details.jpg',
-      '/products/HolidayCheeseboard-Vid1.mp4',
-      '/products/HolidayCheeseboard-Vid2.mp4'
-    ]
-  },
-  {
     id: 'local-cheese-share',
     shopifyProductId: '10783691800879',
     title: 'Local Cheese Share',

@@ -1,14 +1,5 @@
 export const marketData = [
-    {
-        title: "Longmont Farmer's Market",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">Saturdays</h4><p className="centered-text no-text-spacing">8am - 1pm</p></>,
-        time: <strong>Till November 15th</strong>,
-        location: "Boulder County Fairgrounds",
-        locationLink: "https://maps.app.goo.gl/PmpXv5zgM4LqKtKT8",
-        detailsUrl: "https://bcfm.org/markets/longmont-farmers-market/",
-        eventImage: 'url("/farmers-market.svg")'
-    },
+
     {
         title: "Chaffee County Winter Farmer's Market",
         showDate: true,
@@ -35,16 +26,6 @@ export const marketData = [
 ];
 
 export const eventData = [
-    {
-        title: "Winterfest Westminster",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">NOV. <br/> 15</h4></>,
-        time: <><strong>4:30pm - 7:30pm</strong></>,
-        location: "Orchard Town Center",
-        locationLink: "https://share.google/MeWEVj6QlICmKkRKz",
-        detailsUrl: "https://theorchardtowncenter.com/event/winterfest/",
-        eventImage: 'url("/holiday-market.svg")'
-    },
     {
         title: "Beaver Creek Holiday Market",
         showDate: true,
