@@ -35,17 +35,19 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
       <Nav></Nav>
       <section className="shop-header basic-padding flex-center-center flex-column">
         <Link className="no-link-styling" href="/shop"><h3 className="red-text native-record">&larr; Back to Shop</h3></Link>
-        <div style={{padding: '25px 0'}} className="centered-text">
+        <div style={{padding: '25px 10px'}} className="centered-text">
           <h1 className="centered-text no-text-spacing">{product.title}</h1>
           
         </div>
         <div className="flex-start-start full-width" style={{maxWidth: '98vw'}}>
           <ImageSlideshow images={[...product.images]} title={product.title} />
         </div>
+        <div className="flex-center-center flex-column" style={{padding: '10px'}}>        
         {product.subtitle && <h2 className="product-page-subtitle no-text-spacing">{product.subtitle}</h2>}
         <div className="centered-text" dangerouslySetInnerHTML={{ __html: `${product.description1} ${product.description2}` }} />
         <p className="centered-text product-card-price">{product.price}</p>
         <ShopifyBuyButton shopifyProductId={product.shopifyProductId} id={product.id} />
+        </div>
       </section>
       <section className="basic-padding">
         <h3 className="red-text native-record">Additional Product Details</h3>
