@@ -102,6 +102,7 @@ export default function ImageSlideshow({ images, title }: ImageSlideshowProps) {
                     src={src}
                     controls
                     className="product-page-image"
+                    muted={true}
                     style={{
                     width: '100%',
                     height: '100%',

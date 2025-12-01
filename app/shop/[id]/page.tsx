@@ -40,7 +40,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
           
         </div>
         <div className="flex-start-start full-width" style={{maxWidth: '98vw'}}>
-          <ImageSlideshow images={[product.mainImage, ...product.images]} title={product.title} />
+          <ImageSlideshow images={[...product.images]} title={product.title} />
         </div>
         {product.subtitle && <h2 className="product-page-subtitle no-text-spacing">{product.subtitle}</h2>}
         <div className="centered-text" dangerouslySetInnerHTML={{ __html: `${product.description1} ${product.description2}` }} />

@@ -25,6 +25,7 @@ export const productsData = [
     price: '$175',
     mainImage: '/products/CheeseShare2.jpg',
     images: [
+      '/products/CheeseShare2.jpg',
       '/products/CheeseShare1.jpg',
       '/products/Greg.mp4',
       '/Team.jpg',
@@ -56,10 +57,14 @@ export const productsData = [
     </ul>
     `,
     price: '$89',
-    mainImage: '/products/HolidayCheeseBoard/WrappedPic.jpg',
+    mainImage: '/products/HolidayCheeseBoard/WrappedPic.jpeg',
     images: [
       '/products/HolidayCheeseBoard/Unwrapped.mp4',
+      '/products/HolidayCheeseBoard/WrappedPic.jpeg',
       '/products/HolidayCheeseBoard/Wrapped.mp4',
+      '/products/HolidayCheeseBoard/Closeup.jpg',
+      '/products/HolidayCheeseBoard/Closeup2.jpg'
+
 
     ]
 
