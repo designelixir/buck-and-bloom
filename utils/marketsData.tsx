@@ -27,16 +27,6 @@ export const marketData = [
 
 export const eventData = [
     {
-        title: "Beaver Creek Holiday Market",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">NOV. <br/> 28<span className="small-amp">&amp;</span>29</h4></>,
-        time: <><strong>10am - 5pm</strong></>,
-        location: "Beaver Creek Village",
-        locationLink: "https://maps.app.goo.gl/kXYcigSd6WkwDh9R7",
-        detailsUrl: "https://www.beavercreek.com/explore-the-resort/activities/event-detail.aspx?id=%7B36d4856f-0db7-472e-a8cb-ea2126a947a4%7D",
-        eventImage: 'url("/holiday-market.svg")'
-    },
-    {
         title: "Colorado Springs Holiday Food & Gift Festival",
         showDate: true,
         eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 4<span className="small-amp">&amp;</span>5</h4></>,

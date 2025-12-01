@@ -60,6 +60,8 @@ section {padding: 75px 2.5vw 25px; width: 100%;}
 .hidden-scrollbar {scrollbar-width: none; /* Firefox */ -ms-overflow-style: none; /* Internet Explorer 10+ */}
 .hidden-scrollbar::-webkit-scrollbar {display: none; /* Chrome, Safari, and Edge */}
 
+.new-badge {background-image: url('/new.png'); min-width: 20px; min-height: 20px; border: 1px solid red; background-size: contain; background-position: center; background-repeat: no-repeat;}
+.new-badge img {width: 20px;}
 
 .basic-padding {padding: clamp(25px, 2.5vw, 35px);}
 .basic-padding-top-bottom {padding: clamp(25px, 2.5vw, 35px) 0}
