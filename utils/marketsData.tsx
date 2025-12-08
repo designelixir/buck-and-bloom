@@ -27,26 +27,6 @@ export const marketData = [
 
 export const eventData = [
     {
-        title: "Colorado Springs Holiday Food & Gift Festival",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 4<span className="small-amp">&amp;</span>5</h4></>,
-        time: <><strong>10am - 5pm</strong><br/><em>Tickets required </em></>,
-        location: "Norris Penrose Event Center",
-        locationLink: "https://maps.app.goo.gl/xRanGmC47mtiMrHJ7",
-        detailsUrl: "https://hfgf.com/project/colorado-springs-holiday-festival-show/",
-        eventImage: 'url("/holiday-market.svg")'
-    },
-    {
-        title: "Longmont Winter Market",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 6<span className="small-amp">&amp;</span>7</h4></>,
-        time: <><strong>9am - 3pm</strong></>,
-        location: "Boulder County Fairgrounds",
-        locationLink: "https://maps.app.goo.gl/PmpXv5zgM4LqKtKT8",
-        detailsUrl: "https://bcfm.org/winter-market-2025/",
-        eventImage: 'url("/holiday-market.svg")'
-    },
-    {
         title: "Vail Kris Kringle Market",
         showDate: true,
         eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 11 <span className="small-amp">-</span>14</h4></>,
