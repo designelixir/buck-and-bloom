@@ -9,6 +9,10 @@ export default function Footer() {
         <Image src="/Buck&Bloom-Lettermark(cream).svg" className="basic-margin" alt="Buck and Bloom Lettermark Logo" width={300} height={100} priority />
       </button>
       <small className="cream-text reader-text native-record">Plant No. 08-98</small>
+
+      <a href="/mailing-list" className="button no-link-styling">Join Our Mailing List</a>
+      
+      
       
       <address className="native-record normal" style={{marginTop:'10px'}}>
         <Link href="https://share.google/W6BgOYw4SK3XSdFVA" target="_blank" rel="noopener noreferrer" aria-label="View Buck and Bloom location on Google Maps" className="cream-text no-link-styling link-hover">31700 US Highway 24 North, Buena Vista, CO, 81211</Link>
