@@ -5,6 +5,13 @@ import { MarketGridProps } from "@/types/globalTypes";
 
 export default function MarketGrid({ events = [] }: MarketGridProps) {
     
+    if (events.length === 0) {
+        return (
+            <div className="flex-center-center">
+                <p className="centered-text">No upcoming events at this time. Check back soon!</p>
+            </div>
+        );
+    }
 
     return (
         <>

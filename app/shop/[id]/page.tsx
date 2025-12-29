@@ -46,7 +46,11 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         {product.subtitle && <h2 className="product-page-subtitle no-text-spacing">{product.subtitle}</h2>}
         <div className="centered-text" dangerouslySetInnerHTML={{ __html: `${product.description1} ${product.description2}` }} />
         <p className="centered-text product-card-price">{product.price}</p>
-        <ShopifyBuyButton shopifyProductId={product.shopifyProductId} id={product.id} />
+        {/* <ShopifyBuyButton shopifyProductId={product.shopifyProductId} id={product.id} /> */}
+
+    <a className="button no-link-styling" href="javascript:void( window.open( 'https://pci.jotform.com/form/253620534862053', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">
+      Sign up for Cheese Share
+    </a>
         </div>
       </section>
       <section className="basic-padding">

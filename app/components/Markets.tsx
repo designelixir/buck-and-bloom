@@ -17,17 +17,19 @@ export default function Markets({ events = [] }: MarketGridProps) {
                 <h2 className="centered-text">Markets, Events &amp; Hours</h2>
                 <Image src="/flora-3.svg" alt="floral detail" height={25} width={25} style={{marginLeft: '25px'}}></Image>
             </div>
+            
             <div>
-                <h4 className="centered-text red-text basic-padding-top-bottom">Farmer's Markets</h4>
+                <h3 className="centered-text" style={{marginBottom: '25px'}}>For more markets and to keep up with the farm, follow us on Instagram, or <Link href="/mailing-list">join our mailing list.</Link></h3>
+                {/* <h4 className="centered-text red-text basic-padding-top-bottom">Farmer's Markets</h4> */}
                 <MarketGrid events={marketData} />
             </div>
-            <div className="basic-padding-top-bottom">
+            {/* <div className="basic-padding-top-bottom">
                 <h4 className="centered-text red-text basic-padding-top-bottom">Holiday Markets &amp; Events</h4>
                 <MarketGrid events={eventData} />
-            </div>
+            </div> */}
             
             <div className="flex-center-center flex-column basic-padding-top-bottom">
-                <h3 className="centered-text">For more markets and to keep up with the farm, follow us on Instagram!</h3>
+                
                 <Link href="https://www.instagram.com/buckandbloomcheese/" target="_blank" className="no-link-styling" style={{marginRight:'15px'}}>
                     <button> @buckandbloomcheese</button>
                 </Link>

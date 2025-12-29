@@ -41,13 +41,13 @@ export default function Nav() {
   return (
     <nav className={`site-nav fade-in flex-start-center flex-column`}>
       <AnnouncementBar 
-        href="/#shop" 
-        message="Purchase our cheese online - click here!"
+        href="/shop/local-cheese-share" 
+        message="Sign up for our 10 week cheese share - click here!"
       />
       <div className="nav-inner flex-center-spacebetween full-width">
         <div className="desktop flex-center-spacebetween mobile-hide">
           
-          <a id="shopLink" href="/#shop" className="nav-link shop-link">Shop</a>
+          <a id="shopLink" href="/#shop" className="nav-link shop-link">Cheese Share</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="marketsLink" href="/#markets" className="nav-link markets-link">Markets</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
@@ -72,7 +72,8 @@ export default function Nav() {
         <div className="desktop flex-center-spacebetween mobile-hide">
           
           
-          
+           <a id="tourLink" href="/tour" className="nav-link shop-link">Tour the Farm</a>
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="aboutLink" href="/#about" className="nav-link about-link">About</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="contactLink" href="/#contact" className="nav-link contact-link">Contact</a>

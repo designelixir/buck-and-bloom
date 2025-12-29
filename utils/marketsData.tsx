@@ -1,15 +1,6 @@
 export const marketData = [
 
-    {
-        title: "Chaffee County Winter Farmer's Market",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">Saturdays</h4><p className="centered-text no-text-spacing">10am - 1pm</p></>,
-        time: <strong style={{lineHeight: '1.1'}}>November 15th to <br/>December 20th</strong>,
-        location: "Chaffee County Fairgrounds",
-        locationLink: "https://maps.app.goo.gl/X3b65btUHqko7ppP6",
-        detailsUrl: "https://bcfm.org/markets/longmont-farmers-market/",
-        eventImage: 'url("/farmers-market.svg")'
-    },
+   
     {
         title: "Jumpin' Good Country Store",
         showDate: false,
@@ -26,26 +17,26 @@ export const marketData = [
 ];
 
 export const eventData = [
-    {
-        title: "Vail Kris Kringle Market",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 11 <span className="small-amp">-</span>14</h4></>,
-        time: <><strong>12pm - 5pm</strong> (Thurs. & Sun.)<br/><strong>12pm - 5:30pm</strong> (Fri. & Sat.)</>,
-        location: "East Meadow Drive, Vail Village",
-        locationLink: "https://maps.app.goo.gl/wXFfhvuWGbA48c8VA",
-        detailsUrl: "https://www.vailfarmersmarket.com/kris-kringle-market/",
-        eventImage: 'url("/holiday-market.svg")'
-    },
-    {
-        title: "Leadville Motherlode Market at Freight",
-        showDate: true,
-        eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 13 <span className="small-amp">&</span>14</h4></>,
-        time: <><strong>12pm - 5pm</strong></>,
-        location: "The Freight, Leadville",
-        locationLink: "https://maps.app.goo.gl/ow7HPGkkahChEd929",
-        detailsUrl: "https://freightleadville.com/event/freights-motherlode-holiday-markets/",
-        eventImage: 'url("/holiday-market.svg")'
-    },
+    // {
+    //     title: "Vail Kris Kringle Market",
+    //     showDate: true,
+    //     eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 11 <span className="small-amp">-</span>14</h4></>,
+    //     time: <><strong>12pm - 5pm</strong> (Thurs. & Sun.)<br/><strong>12pm - 5:30pm</strong> (Fri. & Sat.)</>,
+    //     location: "East Meadow Drive, Vail Village",
+    //     locationLink: "https://maps.app.goo.gl/wXFfhvuWGbA48c8VA",
+    //     detailsUrl: "https://www.vailfarmersmarket.com/kris-kringle-market/",
+    //     eventImage: 'url("/holiday-market.svg")'
+    // },
+    // {
+    //     title: "Leadville Motherlode Market at Freight",
+    //     showDate: true,
+    //     eventType: <><h4 className="no-text-spacing centered-text">DEC. <br/> 13 <span className="small-amp">&</span>14</h4></>,
+    //     time: <><strong>12pm - 5pm</strong></>,
+    //     location: "The Freight, Leadville",
+    //     locationLink: "https://maps.app.goo.gl/ow7HPGkkahChEd929",
+    //     detailsUrl: "https://freightleadville.com/event/freights-motherlode-holiday-markets/",
+    //     eventImage: 'url("/holiday-market.svg")'
+    // },
     
     
 ];
