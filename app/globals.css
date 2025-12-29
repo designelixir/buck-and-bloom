@@ -144,7 +144,7 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 .nav-link {padding: 0px 25px; animation: fade-in 1s linear both; font-family: var(--native-sans); white-space: nowrap; font-size: 18px; color: var(--cream); flex:1; text-align: center; text-decoration: unset;}
 .nav-link:hover {cursor: pointer; text-decoration: underline!important;}
 .active-link {color: var(--red)!important;}
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   .mobile-hide {display: none;}
   .mobile-show {display: flex;}
   .nav-link {margin: 10px 0;}
