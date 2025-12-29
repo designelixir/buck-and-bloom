@@ -7,7 +7,7 @@ export const productsData = [
     description1: 'Join our local Cheese Share! Our members sign up for a 10 week period to pick up cheese directly from our creamery in Buena Vista. This is a great deal for our members, who receive at least $225 of cheese and get the first peek at our new flavors and cheeses.',
     description2: `
     <span>This is a great deal for our members, who receive at least $225 of cheese and get the first peek at our new flavors and cheeses. This Cheese Share supports our small business throughout the year, especially when our farmer's market season is over.</span>
-    <br><br><strong>Our Cheese Share membership also makes a great gift for someone local!</strong>
+    <br><br><strong>Our Cheese Share membership makes a great gift for someone local!</strong>
     ` ,
     fullDescription: `
     <p>Cheese varieties that you will receive in the share vary based on time of year, but include goat's milk chevre, cow's milk fromage blanc, Mont Creme camembert, aged soft cheeses, and aged hard cheeses including Hatch Chili Pepperjack, and our Highland Alpine. We are always trying new flavors and types of cheese, and our share members will be the first to taste those!</p>
