@@ -76,7 +76,7 @@ section {padding: 75px 2.5vw 25px; width: 100%;}
 
 h1 {font-family: var(--native-sans); font-size: clamp(36px, 2vw + 1.2rem, 48px); line-height: clamp(40px, 2vw + 1.3rem, 52px)}
 h2 {font-family: var(--native-sans); font-size: clamp(36px, 2vw + 1.2rem, 48px); line-height: clamp(40px, 2vw + 1.3rem, 52px); margin: 0; padding: 10px 0; }
-h3 {font-family: var(--reader-font); font-size: 18px; margin: 0; padding: 0; font-weight: 500; }
+h3 {font-family: var(--reader-font); font-size: 22px; margin: 0; padding: 0; font-weight: 500; }
 h4 {font-family: var(--native-record); font-size: 22px; margin: 0; padding: 0; }
 p {font-family: var(--reader-font); font-size: 16px; margin: 10px 0; padding: 0; }
 
