@@ -29,6 +29,7 @@ export default function RootLayout({
       <SpeedInsights></SpeedInsights>
       <body className="flex-center-center flex-column">
         <GlobalAnimations></GlobalAnimations>
+        
         <Nav></Nav>
         
         {children}

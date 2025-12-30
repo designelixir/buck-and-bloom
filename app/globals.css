@@ -80,6 +80,10 @@ h3 {font-family: var(--reader-font); font-size: 22px; margin: 0; padding: 0; fon
 h4 {font-family: var(--native-record); font-size: 22px; margin: 0; padding: 0; }
 p {font-family: var(--reader-font); font-size: 16px; margin: 10px 0; padding: 0; }
 
+@media only screen and (max-width: 600px) {
+  h3 {font-size: 18px;}
+}
+
 .italic {font-style: italic!important;}
 .normal {font-style: normal!important;}
 
