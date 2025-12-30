@@ -1,6 +1,6 @@
 "use client"
 
-export default function Home() {
+export default function Tour() {
   return (
     <main className="flex-center-center flex-column fade-in" id="tour">
       <div className="flex-center-center flex-column basic-padding" style={{marginTop: '250px'}}>
@@ -12,18 +12,12 @@ export default function Home() {
           learn and explore for the whole family!
         </h3>
 
-        <iframe
-          id="JotFormIFrame-253631095381154"
-          title="Buck & Bloom - Tours"
-          src="https://form.jotform.com/253631095381154"
-          style={{
-            minWidth: '100%',
-            maxWidth: '100%',
-            height: '80vh',
-            border: 0
-          }}
-          
-        />
+        <a 
+  className="button no-link-styling" 
+  href="https://form.jotform.com/253631095381154"
+>
+  Sign up for a tour
+</a>
       </div>
     </main>
   );

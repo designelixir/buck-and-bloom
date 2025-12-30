@@ -50,15 +50,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
     <a 
   className="button no-link-styling" 
-  href="#"
-  onClick={(e) => {
-    e.preventDefault();
-    window.open(
-      'https://pci.jotform.com/form/253620534862053', 
-      'blank', 
-      'scrollbars=yes, toolbar=no,'
-    );
-  }}
+  href="https://pci.jotform.com/form/253620534862053"
 >
   Sign up for Cheese Share
 </a>
