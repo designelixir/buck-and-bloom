@@ -40,6 +40,9 @@ export default function Nav() {
 
   return (
     <nav className={`site-nav fade-in flex-start-center flex-column`}>
+             <AnnouncementBar href="https://docs.google.com/forms/d/e/1FAIpQLSd55QfFK7vckYvpd-UnJKqg54fBxvA7GOO_YhHUzf6DOEhZSw/viewform?usp=dialog" 
+       message={<p className="white-text centered-text">We are hiring <strong>Weekend Cheese Mongers</strong>! Join our enthusiastic team here at Buck & Bloom. Click here to learn for job details & application. </p>}
+></AnnouncementBar>
       
       <div className="nav-inner flex-center-spacebetween full-width">
         <div className="desktop flex-center-spacebetween mobile-hide">
