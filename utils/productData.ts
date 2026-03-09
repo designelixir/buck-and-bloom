@@ -1,4 +1,5 @@
-export const productsData = [
+import { Product } from "./Types";
+export const productsData: Product[] = [
 //   {
 //     id: 'local-cheese-share',
 //     shopifyProductId: '10783691800879',
@@ -32,7 +33,6 @@ export const productsData = [
 //       '/GregTeam.jpg',
 //       '/BabyGoats.jpg',
 //       '/products/Goats.mp4',
-
 //     ]
 //   }
 ];

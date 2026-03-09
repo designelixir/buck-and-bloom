@@ -10,3 +10,16 @@ export interface ProductCardProps {
   mainImage: string;
   images?: string[];
 }
+
+export interface Product {
+  id: string;
+  shopifyProductId: string;
+  title: string;
+  subtitle: string;
+  description1: string;
+  description2: string;
+  fullDescription: string;
+  price: string;
+  mainImage: string;
+  images: string[];
+}

@@ -2,8 +2,12 @@ import ProductCard from './ProductCard';
 import { productsData } from '@/utils/productData';
 
 export default function ProductGrid() {
+  if (!productsData || productsData.length === 0) {
+    return <p className="centered-text">No products for sale online, check back later!</p>;
+  }
+
   return (
-    <div className="flex-start-center flex-wrap" >
+    <div className="flex-start-center flex-wrap">
       {productsData.map((product) => (
         <ProductCard
           key={product.id}
