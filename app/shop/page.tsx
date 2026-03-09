@@ -8,10 +8,11 @@ export default function ShopPage() {
       <Nav></Nav>
       <section className="shop-header basic-padding">
         <h1 className="centered-text">Shop Cheese</h1>
-        <p className="centered-text">Click a product for more details, and important information about delivery and pickup!</p>
+        <p className="centered-text">No products for sale online, check back later!</p>
+        {/* <p className="centered-text">Click a product for more details, and important information about delivery and pickup!</p> */}
       </section>
       <section className="product-grid flex-start-start flex-wrap section-no-padding">
-        <ProductGrid></ProductGrid>
+        {/* <ProductGrid></ProductGrid> */}
 
       </section>
       
