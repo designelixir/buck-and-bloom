@@ -12,7 +12,7 @@ export default function Home() {
     <main className="flex-center-center flex-column fade-in">
       
       <HeroText></HeroText>
-      <ProductSummary></ProductSummary>
+      {/* <ProductSummary></ProductSummary> */}
       <Markets/>
       <VisitUs></VisitUs>
       <About></About>

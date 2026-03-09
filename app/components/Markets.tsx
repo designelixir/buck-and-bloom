@@ -28,12 +28,6 @@ export default function Markets({ events = [] }: MarketGridProps) {
                 <MarketGrid events={eventData} />
             </div> */}
             
-            <div className="flex-center-center flex-column basic-padding-top-bottom">
-                
-                <Link href="https://www.instagram.com/buckandbloomcheese/" target="_blank" className="no-link-styling" style={{marginRight:'15px'}}>
-                    <button> @buckandbloomcheese</button>
-                </Link>
-            </div>
         </section>
     )
 }

@@ -47,8 +47,8 @@ export default function Nav() {
       <div className="nav-inner flex-center-spacebetween full-width">
         <div className="desktop flex-center-spacebetween mobile-hide">
           
-          <a id="shopLink" href="/shop/local-cheese-share" className="nav-link shop-link">Cheese Share</a>
-          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
+          {/* <a id="shopLink" href="/shop/local-cheese-share" className="nav-link shop-link">Cheese Share</a>
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} /> */}
           <a id="marketsLink" href="/#markets" className="nav-link markets-link">Markets</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="visitLink" href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
@@ -95,7 +95,7 @@ export default function Nav() {
 
       {open && (
         <div className="mobile-menu flex-center-center flex-column mobile-show">
-          <a id="shopLink" onClick={handleLinkClick} href="/shop/local-cheese-share" className="nav-link shop-link">Cheese Share</a>
+          {/* <a id="shopLink" onClick={handleLinkClick} href="/shop/local-cheese-share" className="nav-link shop-link">Cheese Share</a> */}
           <a id="marketsLink" onClick={handleLinkClick} href="/#markets" className="nav-link markets-link">Markets</a>
           <a id="visitLink" onClick={handleLinkClick} href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
           <a id="tourLink" onClick={handleLinkClick} href="/tour" className="nav-link tour-link">Tour the Farm</a>
