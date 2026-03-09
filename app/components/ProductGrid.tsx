@@ -3,7 +3,7 @@ import { productsData } from '@/utils/productData';
 
 export default function ProductGrid() {
   if (!productsData || productsData.length === 0) {
-    return <p className="centered-text">No products for sale online, check back later!</p>;
+    return <div className="flex-center-center"><h3 className="centered-text">No products for sale online, check back later!</h3></div>;
   }
 
   return (
