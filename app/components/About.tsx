@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import SectionObserver from "./SectionObserver"
 import Image from "next/image"
 
@@ -40,7 +41,7 @@ export default function About(){
                     <div className="about-text-wrapper basic-padding basic-margin centered-text about-text-wrapper-2 animate-in flex-center-center flex-column">
                         
                         <h3>
-                            Our milk is sourced from several farms across Colorado. We are proud to craft cheese from some of the best quality milk in the state, made fresh as soon as the milk arrives at our doors. While our goat milk cheeses are available seasonally, our cow milk cheeses are available year round.
+                            We prioritize sourcing the highest quality milk possible from independent family farms across Colorado. Our cow milk is produced by <Link href="https://www.coloradocow.com/" target="_blank">Colorado Cow</Link> in Kersey, CO, and our goat milk (available seasonally) is produced by <Link href="https://www.yoderfamilyfarms.net/" target="_blank">Yoder Family Farms</Link> in Trinidad, CO. Our own young goat herd will be producing milk starting spring of 2027, but we will always source the majority of our milk from other dairy farmers that we know and trust.
                         </h3>
                     </div>
                 </div>
