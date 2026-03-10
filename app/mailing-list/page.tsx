@@ -10,7 +10,7 @@ export default function MailingListPage() {
             <Image src="/goat-mail.svg" alt="sketch of a goat holding an envelope" height="200" width="250"/>
           <h1 className="centered-text">Join Buck & Bloom's Mailing List!</h1>
           <h3 className="header-description">Enter your name and email to get occasional updates on Buck & Bloom's products, markets, and more. You may unsubscribe at any time.
-            <strong>Consider adding <Link href="mailto:buckandbloomcheese@gmail.com" target="_blank">buckandbloomcheese@gmail.com</Link>to your mailing list, so our newsletters aren't filtered to your spam / promotions! <a href="/contact.vcf" download>Click here to add our contact.</a></strong>
+            <strong> Consider adding <Link href="mailto:buckandbloomcheese@gmail.com" target="_blank">buckandbloomcheese@gmail.com</Link>to your mailing list, so our newsletters aren't filtered to your spam / promotions! <a href="/contact.vcf" download>Click here to add our contact.</a></strong>
           </h3>
         
             <MailingListForm></MailingListForm>
