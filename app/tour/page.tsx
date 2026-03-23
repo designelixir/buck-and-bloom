@@ -18,7 +18,7 @@ export default function Tour() {
 
         <a 
   className="button no-link-styling" 
-  href="https://form.jotform.com/253631095381154"
+  href="https://form.jotform.com/260805425436052"
 >
   Sign up for a tour
 </a>
