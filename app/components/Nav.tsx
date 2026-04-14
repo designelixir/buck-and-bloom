@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
-import AnnouncementBar from "./AnnouncementBanner";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,14 +35,22 @@ export default function Nav() {
     onEnterBack: () => gsap.to(".nav-inner", { minHeight: "170px", duration: 0.3, ease: "power2.out" }),
   });
 }, [animationDone]);
-
+const applyLink = 'https://docs.google.com/forms/d/e/1FAIpQLSf-U_2trl1PpW6cQVJpoaUQHS8FeDw81A7FUreL6GIibPXDpA/viewform'
 
   return (
-    <nav className={`site-nav fade-in flex-start-center flex-column`}>
-             <AnnouncementBar href="https://docs.google.com/forms/d/e/1FAIpQLSd55QfFK7vckYvpd-UnJKqg54fBxvA7GOO_YhHUzf6DOEhZSw/viewform?usp=dialog" 
-       message={<p className="white-text centered-text">We are hiring <strong>Weekend Cheese Mongers</strong>! Join our enthusiastic team here at Buck & Bloom. Click here to learn for job details & application. </p>}
-></AnnouncementBar>
-      
+    <>
+    {/* Announcement bar - comment out to hide */}
+    <div className="announcement-bar-container slide-in-top flex-start-start no-flex-grow">
+      <div className="flex-center-spacebetween no-flex-grow full-width announcement-bar-inner">
+        <div style={{ width: '75px' }}></div>
+        <Link href={applyLink} target="_blank" className="no-link-styling">
+          <p className="centered-text">We are hiring <strong>Part-time Cheesemakers</strong>! Join our enthusiastic team here at Buck & Bloom. Click here to learn for job details & application. </p>
+        </Link>
+        <button onClick={(e) => e.currentTarget.closest('.announcement-bar-inner')?.parentElement?.classList.add('announcement-bar-hide')} className="close-button no-hover-grow" aria-label="Close announcement">&times;</button>
+      </div>
+    </div>
+    
+    <nav className={`fade-in flex-start-center flex-column slide-in-top`}>
       <div className="nav-inner flex-center-spacebetween full-width">
         <div className="desktop flex-center-spacebetween mobile-hide">
           
@@ -52,6 +59,8 @@ export default function Nav() {
           <a id="marketsLink" href="/#markets" className="nav-link markets-link">Markets</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="visitLink" href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
+          <a id="aboutLink" href="/#about" className="nav-link about-link">About</a>
           
         </div>
 
@@ -74,7 +83,7 @@ export default function Nav() {
           
            <a id="tourLink" href="/tour" className="nav-link shop-link">Tour the Farm</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
-          <a id="aboutLink" href="/#about" className="nav-link about-link">About</a>
+          <a id="jobsLink" href="/jobs" className="nav-link jobs-link">Jobs</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="contactLink" href="/#contact" className="nav-link contact-link">Contact</a>
           
@@ -98,8 +107,9 @@ export default function Nav() {
           {/* <a id="shopLink" onClick={handleLinkClick} href="/shop/local-cheese-share" className="nav-link shop-link">Cheese Share</a> */}
           <a id="marketsLink" onClick={handleLinkClick} href="/#markets" className="nav-link markets-link">Markets</a>
           <a id="visitLink" onClick={handleLinkClick} href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
-          <a id="tourLink" onClick={handleLinkClick} href="/tour" className="nav-link tour-link">Tour the Farm</a>
           <a id="aboutLink" onClick={handleLinkClick} href="/#about" className="nav-link about-link">About</a>
+          <a id="tourLink" onClick={handleLinkClick} href="/tour" className="nav-link tour-link">Tour the Farm</a>
+          <a id="jobsLink" onClick={handleLinkClick} href="/jobs" className="nav-link jobs-link">Jobs</a>
           <a id="contactLink" onClick={handleLinkClick} href="/#contact" className="nav-link contact-link">Contact</a>
           
         </div>
@@ -107,5 +117,6 @@ export default function Nav() {
       
       
     </nav>
+    </>
   );
 }

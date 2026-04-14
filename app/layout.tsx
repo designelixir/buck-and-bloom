@@ -5,7 +5,6 @@ import GlobalAnimations from "@/utils/GlobalAnimations";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Nav from "./components/Nav";
-import AnnouncementBar from "./components/AnnouncementBanner";
 
 export const metadata: Metadata = {
   title: "Buck & Bloom Cheese Co.",
@@ -14,6 +13,8 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
 };
+
+
 
 export default function RootLayout({
   children,
@@ -30,11 +31,10 @@ export default function RootLayout({
       <SpeedInsights></SpeedInsights>
       
       <body className="flex-center-center flex-column">
-        <GlobalAnimations></GlobalAnimations>
-        
-       
-        
-        <Nav></Nav>
+
+        <header className="site-nav">
+          <Nav></Nav>
+        </header>   
         
         {children}
         <Footer></Footer>

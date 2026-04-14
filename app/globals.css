@@ -11,12 +11,18 @@
     --tan2: #CEC0A6;
     --tan3: #C4B59B;
     --red: #d61f26;
+    --redorange: #C0392B;
+    --orange: #D4622A; 
+    --gold: #E8A95C; 
+    --yellow: #F2DBA8; 
+    --parchment: #F5EDD8;
     --black: #191919;
     --native-script: 'Native Record Script', sans-serif;
     --native-sans: 'Native Record Sans', sans-serif;
     --native-record: 'Native Record Serif', serif;
     --reader-font: "amifer", sans-serif;
-
+    --box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    --pad: clamp(25px, 2.5vw, 35px);
 }
 
 .native-script {font-family: var(--native-script);}
@@ -25,8 +31,8 @@
 .reader-font {font-family: var(--reader-font);}
 .small-amp {font-size: 14px; font-family: var(--native-record); margin: -5px 4px 0;  }
 
-html {max-width: 100vw; overflow-x: hidden; scroll-behavior: smooth; background-color: tan;}
-body {width: 100%;  margin: 0px; background-image: url('/tile2.jpg'); background-size: 600px auto;}
+html {max-width: 100vw; overflow-x: hidden; scroll-behavior: smooth; background-color: var(--yellowf);}
+body {width: 100%;  margin: 0px; background-image: url('/tile3.png'); background-size: 600px auto;}
 main {min-height: 50vh;}
 .basic-bg {background-image: url('/tile2.jpg'); background-size: 600px auto; background-attachment:fixed;}
 section {padding: 75px 2.5vw 25px; width: 100%;}
@@ -96,8 +102,8 @@ a:hover { transform: scale(1.01); color: var(--red);}
 .no-hover-grow:hover {transform: unset!important;}
 
 label {font-family: var(--native-record); font-size: 16px; margin: 10px 0; padding: 0; }
-input {padding: 10px; background-color: rgba(255,255,255,0.25); border: 1px solid black; border-radius: 2px; min-width: 300px;}
-textarea {padding: 10px; background-color: rgba(255,255,255,0.25); border: 1px solid black; border-radius: 2px; min-width: 300px;}
+input {padding: 10px; background-color: rgba(245, 237, 216, 0.5); border: 1px solid var(--orange); border-radius: 2px; min-width: 300px;}
+textarea {padding: 10px; background-color: rgba(245, 237, 216, 0.5); border: 1px solid var(--orange); border-radius: 2px; min-width: 300px;}
 
 .bold-text {font-weight: 600;}
 .red-text {color: var(--red);}
@@ -124,6 +130,9 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 .textured-bg-black {background-image: url('/RuggedSquare(textured).png'); background-size: 110% 100%; background-repeat: no-repeat; background-position: center;}
 
 
+/* Header */
+header {width: 100%; }
+.site-nav {width: 100vw; backdrop-filter: blur(1px); position: fixed; top: 0; z-index: 100; max-width: 100vw!important;  background-image: url('/tile-4.png'); background-size: auto 90%; background-repeat: repeat-x; background-position: 0 0;}
 
 /* Hero */
 .hero-wrapper {width: 100vw; max-width: 100vw; min-height: 100vh;  padding: 150px 2.5vw 25px; min-height: 100vh; max-height: 100vh; overflow: clip; }
@@ -139,8 +148,8 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 }
 
 /* Navigation */
-.site-nav {width: 100vw;  backdrop-filter: blur(1px); position: fixed; top: 0; z-index: 100;}
-.announcement-bar-container {width: 100vw; position: relative; background: var(--red); margin-bottom: 5px; }
+.announcement-bar-hide {height: 0!important; display: none!important;}
+.announcement-bar-container {background: var(--gold); box-shadow: var(--box-shadow); margin-bottom: 15px;}
 .announcement-bar-inner { margin: 0; padding: 0;}
 .close-button {margin: 0; background-image: unset;}
 .nav-inner {width: 100vw; min-height: 170px; z-index: 2; padding: 0 25px; background-image: url('/black-nav.png'); background-size: calc(100% - 20px) 80px; background-repeat: no-repeat; background-position: center}
@@ -159,11 +168,11 @@ button:hover {cursor: pointer; transform: scale(1.1);}
 
 /* Markets */
 .market-grid {align-items: stretch}
-.event { background: rgba(255,255,255,0.25); backdrop-filter: blur(5px); border-radius: 5px; background-size: 100% 100%; margin: 10px; max-width: 35%; min-width: 260px;}
+.event { background: var(--parchment); backdrop-filter: blur(5px); border-radius: 5px; background-size: 100% 100%; margin: 10px; max-width: 35%; min-width: 260px;}
 .event-content {padding: 0 15px 15px 15px}
 .event-title {font-size: 20px; padding: 0; margin-top: 20px; line-height: 1.1; font-family: var(--native-record); font-weight: 700;}
 .date-tag-wrapper { width: 100%; height: 120px; margin-top: 25px; background-size: auto 90px; background-position: center; background-repeat: no-repeat;}
-.date-tag { background: var(--red); width: calc(100% + 10px); text-align: center; color: var(--cream); margin: -20px -5px 0 -5px;  padding: 5px 5px;}
+.date-tag { background: var(--yellow); width: calc(100% + 10px); text-align: center; color: var(--cream); margin: -20px -5px 0 -5px;  padding: 5px 5px;}
 .date-tag p {font-family: var(--native-sans); margin: 0;}
 @media only screen and (max-width: 600px) {
   .event {max-width: unset; width: 100%; min-width: 90%;}
@@ -231,9 +240,45 @@ div::-webkit-scrollbar { display: none; }
   .name-inputs { grid-template-columns: 1fr; }
 }
 
+/* About */
+.panel { max-width: 100vw; padding: 50px 0; overflow-x: clip;}
+.cutout { background-size: contain; background-repeat: no-repeat;}
+.about-text-wrapper {z-index: 5; background: var(--parchment); border-radius: 7px; box-shadow: var(--box-shadow); }
+.about-text-wrapper-1 {margin-top: -150px}
+.about-text-wrapper-2 {margin-top: -50px;}
+
+.greg {background-image: url('/cutouts/greg-2-outlined.png'); width: 45vw; margin-left: -5vw; z-index: 2; aspect-ratio: 315/330;  }
+.staff {background-image: url('/cutouts/staff-cutout.png'); width: 33vw; aspect-ratio: 290/450; margin-left: -25vw; z-index: 1; }
+.staff-2 {background-image: url('/cutouts/staff-2-cutout.png'); width: 42vw; aspect-ratio: 380/325; margin-left: -15vw; z-index: 2;  }
+.amanda {background-image: url('/cutouts/amanda-outlined.png'); z-index: 0; width: 30vw; margin-left: -28vw; margin-top: -10vw; aspect-ratio: 290/486; }
+.jade {background-image: url('/cutouts/jade-cutout.png'); width: 40vw; aspect-ratio: 316/350; margin-left: -20vw;   z-index: 2;}
+.rhonda {background-image: url('/cutouts/rhonda-outlined.png'); width: 20vw; margin-left: -15vw;  aspect-ratio: 178/218; z-index: 1; }
+
+.amanda-mtns {background-image: url('/cutouts/amanda-mountains.png'); width: 100%; aspect-ratio: 977/400; background-size: cover; background-position: center 0; background-repeat: no-repeat;}
+.cheeses {background-image: url('/cutouts/cheeses-1-outline.png'); z-index: 3; width: 35vw;  max-width: 350px; margin-top: -30vh; aspect-ratio: 110/90;  transform: rotate(-25deg); }
+.cheeses-2 {background-image: url('/cutouts/cheeses-2-outline.png'); z-index: 3; width: 35vw; max-width: 325px;  margin-bottom: -5vh; transform: rotate(25deg); aspect-ratio: 110/90;  }
+
+.scene {max-width: 1200px; min-height: 500px;}
 
 
+@media only screen and (max-width: 700px) {
+    .about-text-wrapper-1 {margin-top: -150px}
+    .rhonda {display: none;}
+    .amanda {margin-left: -50vw; margin-bottom: 10vh; width: 50vw; margin-right: -10vw;}
+    .staff-2 {width: 70vw; margin-left: -40vw; margin-bottom: 5vh;}
+    .staff {display: none;}
+    .greg {width: 70vw; margin-left: -15vw; margin-top: 10vh;}
+    .jade {width: 60vw; margin-right: -20vw; }
+    .amanda-mtns {background-size: 200%; aspect-ratio: 977/800; background-position: 35% 0%}
+    .cheeses {margin-bottom: 2vh; width: 50vw; margin-left: -5vw;}
+    .cheeses-2 {display: none;}
+}
 
+/* Contact Card */
+.contact-wrapper {background-image: url('/redorange-textured.png'); background-size: 100% 100%; color: var(--parchment); padding: var(--pad) var(--pad) 0; }
+
+.slide-in-top{-webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) backwards;animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) backwards}
+@-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 .fade-in{ -webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}

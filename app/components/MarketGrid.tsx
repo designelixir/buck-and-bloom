@@ -19,14 +19,14 @@ export default function MarketGrid({ events = [] }: MarketGridProps) {
                 {events.map((event, index) => (
                     <div key={index} className="event box-shadow flex-center-center basic-bg flex-column" style={{maxWidth: event.showDate ? '25%' : '35%'}}>
                         <div className="date-tag-wrapper flex-start-start no-flex-grow" style={{ backgroundImage: event.eventImage}}>
-                             <span className="date-tag" style={{ backgroundColor: event.showDate ? "var(--red)" : "var(--black)" }}>{event.eventType}</span>
+                             <span className="date-tag" style={{ backgroundColor: event.showDate ? "var(--redorange)" : "var(--orange)" }}>{event.eventType}</span>
                         </div>
                         <div className="event-content flex-center-center flex-column align-stretch">
                             <h3 className="centered-text no-text-spacing event-title">{event.title}</h3>
                             <div className="flex-center-center flex-column no-flex-grow" style={{marginTop: '15px'}}>
                                 <Link className="no-link-styling no-text-spacing flex-start-start" target="_blank" href={event.locationLink}>
-                                    <Image src="/location.svg" alt="location pin icon" width={15} height={15} style={{marginRight: '5px', marginTop: '5px'}}></Image>
-                                    <p className="no-text-spacing centered-text" style={{whiteSpace: 'wrap'}}>{event.location}</p>
+                                    
+                                    <p className="no-text-spacing centered-text" style={{whiteSpace: 'wrap', opacity: '0.5', fontSize: '14px'}}>{event.location}</p>
                                 </Link>
                                 <p className="centered-text no-text-spacing">{event.time}</p>
                             </div>

@@ -49,7 +49,7 @@ export default function ContactForm() {
         errors={state.errors}
       />
       <div className='flex-center-center'>
-      <button type="submit" disabled={state.submitting}>
+      <button type="submit" className='black-button' disabled={state.submitting}>
         Submit
       </button>
       </div>
