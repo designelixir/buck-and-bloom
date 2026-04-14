@@ -106,8 +106,8 @@ input {padding: 10px; background-color: rgba(245, 237, 216, 0.5); border: 1px so
 textarea {padding: 10px; background-color: rgba(245, 237, 216, 0.5); border: 1px solid var(--orange); border-radius: 2px; min-width: 300px;}
 
 @media only screen and (max-width: 600px) {
-  input {min-width: unset!important;}
-  textarea {min-width: unset!important;}
+  input {min-width: 80vw!important;}
+  textarea {min-width: 80vw!important;}
 }
 
 .bold-text {font-weight: 600;}
