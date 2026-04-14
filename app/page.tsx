@@ -6,15 +6,13 @@ import Contact from "./components/Contact"
 
 export default function Homepage2(){
     return(
-        <>
-            <main>
+
+            <main className="full-width">
                 <HeroText></HeroText>
                 <Markets/>
                 <VisitUs></VisitUs>
                 <About></About>
                       <Contact></Contact>
             </main>
-        
-        </>
     )
 }

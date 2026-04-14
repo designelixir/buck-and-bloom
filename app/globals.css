@@ -141,7 +141,7 @@ header {width: 100%; }
 .hero-wrapper h3 {padding: 0 10vw;}
 
 @media only screen and (max-width: 600px) {
-  .hero-wrapper {background-size: 1000px auto!important; background-position: center 5vh; padding: 250px 2.5vw 50px;}
+  .hero-wrapper {background-size: 1000px auto!important; background-position: center 5vh; padding: 350px 2.5vw 50px;}
   .hero-wrapper h1 {font-size: 52px; line-height: 50px;}
   .hero-wrapper h3 {padding: 0 5vw;}
   .hero-wrapper {min-height: unset!important; }
@@ -149,7 +149,7 @@ header {width: 100%; }
 
 /* Navigation */
 .announcement-bar-hide {height: 0!important; display: none!important;}
-.announcement-bar-container {background: var(--gold); box-shadow: var(--box-shadow); margin-bottom: 15px;}
+.announcement-bar-container {background: var(--gold); box-shadow: var(--box-shadow); margin-bottom: 5px;}
 .announcement-bar-inner { margin: 0; padding: 0;}
 .close-button {margin: 0; background-image: unset;}
 .nav-inner {width: 100vw; min-height: 170px; z-index: 2; padding: 0 25px; background-image: url('/black-nav.png'); background-size: calc(100% - 20px) 80px; background-repeat: no-repeat; background-position: center}
@@ -162,6 +162,7 @@ header {width: 100%; }
   .mobile-hide {display: none;}
   .mobile-show {display: flex;}
   .nav-link {margin: 10px 0;}
+  .logo {width: 100px; height: 100px;}
   .mobile-menu {margin-left: 2.25vw}
   .visit-us-button-wrapper {flex-direction: column;}
 }

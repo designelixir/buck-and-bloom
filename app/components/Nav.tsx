@@ -74,7 +74,7 @@ const applyLink = 'https://docs.google.com/forms/d/e/1FAIpQLSf-U_2trl1PpW6cQVJpo
         </div>
 
           <Link href="/">
-            <Image ref={logoRef} src="/Buck&Bloom-TileLogo.png" alt="Buck & Bloom Tile Logo" width={150} height={150} priority />
+            <Image ref={logoRef} src="/Buck&Bloom-TileLogo.png" alt="Buck & Bloom Tile Logo" className="logo" width={150} height={150} priority />
           </Link>
         
 
