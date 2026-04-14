@@ -146,7 +146,7 @@ header {width: 100%; }
 .hero-wrapper h3 {padding: 0 10vw;}
 
 @media only screen and (max-width: 600px) {
-  .hero-wrapper {background-size: 1000px auto!important; background-position: bottom bottom; padding: 300px 2.5vw 100px;}
+  .hero-wrapper {background-size: 1000px auto!important; background-position: left bottom; margin-top: 150px; padding: 150px 2.5vw 0;}
   .hero-wrapper h1 {font-size: 52px; line-height: 50px;}
   .hero-wrapper h3 {padding: 0 5vw;}
   .hero-wrapper {min-height: unset!important; }
