@@ -105,6 +105,11 @@ label {font-family: var(--native-record); font-size: 16px; margin: 10px 0; paddi
 input {padding: 10px; background-color: rgba(245, 237, 216, 0.5); border: 1px solid var(--orange); border-radius: 2px; min-width: 300px;}
 textarea {padding: 10px; background-color: rgba(245, 237, 216, 0.5); border: 1px solid var(--orange); border-radius: 2px; min-width: 300px;}
 
+@media only screen and (max-width: 600px) {
+  input {min-width: unset!important;}
+  textarea {min-width: unset!important;}
+}
+
 .bold-text {font-weight: 600;}
 .red-text {color: var(--red);}
 .cream-text {color: var(--cream);}
@@ -141,7 +146,7 @@ header {width: 100%; }
 .hero-wrapper h3 {padding: 0 10vw;}
 
 @media only screen and (max-width: 600px) {
-  .hero-wrapper {background-size: 1000px auto!important; background-position: center 5vh; padding: 350px 2.5vw 50px;}
+  .hero-wrapper {background-size: 1000px auto!important; background-position: bottom bottom; padding: 300px 2.5vw 100px;}
   .hero-wrapper h1 {font-size: 52px; line-height: 50px;}
   .hero-wrapper h3 {padding: 0 5vw;}
   .hero-wrapper {min-height: unset!important; }

@@ -13,7 +13,7 @@ export default function Contact() {
         <h3 className="centered-text">Interested in selling our products or a collab? Contact us!</h3>
         <ContactForm></ContactForm>
         <div className="flex-center-center" style={{marginTop: '-180px'}}>
-          <Image src="/lily-detail.png" alt="lily detail" height={300} width={400} style={{opacity: '0.25'}}/>
+          <Image src="/lily-detail.png" alt="lily detail" height={300} width={400} style={{opacity: '0.25', width: '80%', height: 'auto'}}/>
         </div>
         
       </div>
