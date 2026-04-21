@@ -119,10 +119,13 @@ textarea {padding: 10px; background-color: rgba(245, 237, 216, 0.5); border: 1px
 button {background-image: url('/red-nav.png'); margin: 10px 0; background-size: 100% 100%; background-color: unset; border: unset;  font-family: var(--native-sans); padding: 10px 25px; color: var(--cream); font-size: 18px;}
 .button {background-image: url('/red-nav.png'); margin: 10px 0; background-size: 100% 100%; background-color: unset; border: unset;  font-family: var(--native-sans); padding: 10px 25px; color: var(--cream); font-size: 18px;}
 .button:hover {color: var(--cream)!important;}
-button:hover {cursor: pointer; transform: scale(1.1);}
+button:hover {cursor: pointer; transform: scale(1.05);}
 .black-button {background-image: url('/black-nav.png');}
 .black-button:hover a {text-decoration: none;}
 .small-button {padding: 5px 10px; font-size: 14px;}
+
+.no-style-button {background: transparent; color: black!important; padding: 10px 0;}
+
 
 .hover:hover {cursor: pointer; transform: scale(1.05);}
 .hover {cursor: pointer;}

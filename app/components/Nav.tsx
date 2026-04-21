@@ -44,7 +44,7 @@ const applyLink = 'https://docs.google.com/forms/d/e/1FAIpQLSf-U_2trl1PpW6cQVJpo
       <div className="flex-center-spacebetween no-flex-grow full-width announcement-bar-inner">
         <div style={{ width: '75px' }}></div>
         <Link href={applyLink} target="_blank" className="no-link-styling">
-          <p className="centered-text">We are hiring <strong>Part-time Cheesemakers</strong>! Join our enthusiastic team here at Buck & Bloom. Click here to learn for job details & application. </p>
+          <p className="centered-text"> <strong>We are hiring! </strong>Join our enthusiastic team here at Buck & Bloom. Click here for available jobs, details & applications. </p>
         </Link>
         <button onClick={(e) => e.currentTarget.closest('.announcement-bar-inner')?.parentElement?.classList.add('announcement-bar-hide')} className="close-button no-hover-grow" aria-label="Close announcement">&times;</button>
       </div>
