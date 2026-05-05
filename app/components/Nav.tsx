@@ -35,7 +35,7 @@ export default function Nav() {
     onEnterBack: () => gsap.to(".nav-inner", { minHeight: "170px", duration: 0.3, ease: "power2.out" }),
   });
 }, [animationDone]);
-const applyLink = 'https://docs.google.com/forms/d/e/1FAIpQLSf-U_2trl1PpW6cQVJpoaUQHS8FeDw81A7FUreL6GIibPXDpA/viewform'
+const applyLink = '/jobs'
 
   return (
     <>
