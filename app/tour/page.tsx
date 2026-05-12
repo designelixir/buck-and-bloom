@@ -16,7 +16,7 @@ export default function Tour() {
           learn and explore for the whole family!
         </h3>
 
-        <a className="button no-link-styling" href="https://form.jotform.com/260805425436052" > Sign up for a tour </a>
+        <a className="button no-link-styling" href="https://form.jotform.com/253631095381154" > Sign up for a tour </a>
       </div>
     </main>
   );
