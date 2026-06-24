@@ -35,7 +35,7 @@ export default function Nav() {
     onEnterBack: () => gsap.to(".nav-inner", { minHeight: "170px", duration: 0.3, ease: "power2.out" }),
   });
 }, [animationDone]);
-const applyLink = '/jobs'
+const applyLink = '/tour'
 
   return (
     <>
@@ -44,7 +44,7 @@ const applyLink = '/jobs'
       <div className="flex-center-spacebetween no-flex-grow full-width announcement-bar-inner">
         <div style={{ width: '75px' }}></div>
         <Link href={applyLink} target="_blank" className="no-link-styling">
-          <p className="centered-text"> <strong>We are hiring! </strong>Join our enthusiastic team here at Buck & Bloom. Click here for available jobs, details & applications. </p>
+          <p className="centered-text"> <strong>Come tour the farm! </strong>Meet our goats, see our cheesemaking facilities, and try our cheese! Click here to book.</p>
         </Link>
         <button onClick={(e) => e.currentTarget.closest('.announcement-bar-inner')?.parentElement?.classList.add('announcement-bar-hide')} className="close-button no-hover-grow" aria-label="Close announcement">&times;</button>
       </div>
@@ -83,8 +83,8 @@ const applyLink = '/jobs'
           
            <a id="tourLink" href="/tour" className="nav-link shop-link">Tour the Farm</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
-          <a id="jobsLink" href="/jobs" className="nav-link jobs-link">Jobs</a>
-          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
+          {/* <a id="jobsLink" href="/jobs" className="nav-link jobs-link">Jobs</a>
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} /> */}
           <a id="contactLink" href="/#contact" className="nav-link contact-link">Contact</a>
           
         </div>

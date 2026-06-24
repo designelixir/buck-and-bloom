@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import ShowMore from "../components/ShowMore";
 
 export default function Jobs() {
@@ -8,8 +9,8 @@ export default function Jobs() {
           
           <h1 className="centered-text" style={{marginTop: '50px'}}>Work with Us</h1>
           <p className="header-description">We are hiring! Join our enthusiastic team here at Buck & Bloom. Please review the job requirements carefully, and click Details to apply!</p>
-          <div className="flex-center-center flex-wrap" style={{marginBottom: '50px'}}>
-            {/* Part time cheesemaker */}
+          <h3 className="red-text">Sorry, no job postings available at this time. Check back later, or follow us on <Link target="_blank" href="https://instagram.com/buckandbloomcheese">Instagram!</Link></h3>
+          {/* <div className="flex-center-center flex-wrap" style={{marginBottom: '50px'}}>
             <div className="event box-shadow basic-padding" style={{maxWidth: 'unset'}}>
                 <h2 style={{fontFamily: 'var(--native-record)', fontSize: '32px'}}>Part-Time Cheesemaker</h2>
                 <p><strong>Schedule: </strong>Friday - Tuesday, 9:00AM - 4:00PM (30-minute unpaid lunch)</p>
@@ -60,7 +61,6 @@ export default function Jobs() {
                 
             </div>
 
-            {/* Cheesemonger */}
             <div className="event box-shadow basic-padding" style={{maxWidth: 'unset'}}>
                 <h2 style={{fontFamily: 'var(--native-record)', fontSize: '32px'}}>Mountain Market Cheesemonger</h2>
                 <p><strong>Schedule: </strong>All Day Sunday, June 14th - October 4th</p>
@@ -114,7 +114,7 @@ export default function Jobs() {
 
             
 
-          </div>
+          </div> */}
         
 
         </div>
