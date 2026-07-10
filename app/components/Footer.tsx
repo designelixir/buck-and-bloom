@@ -24,8 +24,13 @@ export default function Footer() {
         <Link href="https://www.instagram.com/buckandbloomcheese/" target="_blank" rel="noopener noreferrer" aria-label="Follow Buck and Bloom on Instagram" className="hover" style={{ marginRight: "15px" }}><Image src="/ig.svg" alt="instagram icon" role="presentation" width={25} height={25} /></Link>
         <Link href="https://www.facebook.com/profile.php?id=61578967916917" target="_blank" rel="noopener noreferrer" aria-label="Follow Buck and Bloom on Facebook" className="hover"><Image src="/fb.svg" alt="facebook icon" role="presentation" width={25} height={25} /></Link>
       </nav>
+      <div className="flex-center-center full-width">
+        <Link href="https://coloradoproud.com/" className="hover" target="_blank" rel="noopener">
+          <Image src="/colorado-proud.png" alt="Colorado Proud logo" width={50} height={50}></Image>
+        </Link>
+      </div>
       
-        <Link href="https://designelixir.studio" target="_blank" rel="noopener noreferrer" aria-label="Visit Design Elixir Studio website" className="hover native-record no-link-styling">
+        <Link href="https://designelixir.studio" target="_blank" rel="noopener noreferrer" aria-label="Visit Design Elixir Studio website" className="hover native-record no-link-styling" style={{marginTop: '25px'}}>
           <small className="cream-text native-record" style={{ fontSize: "10px", opacity: 0.5, fontWeight: "100" }}>Made with <span aria-hidden="true">♥</span> by Design Elixir Studio</small>
         </Link>
       
