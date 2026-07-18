@@ -83,8 +83,8 @@ const applyLink = '/tour'
           
            <a id="tourLink" href="/tour" className="nav-link shop-link">Tour the Farm</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
-          {/* <a id="jobsLink" href="/jobs" className="nav-link jobs-link">Jobs</a>
-          <Image src="/flora.svg" alt="floral detail" height={25} width={25} /> */}
+          <a id="jobsLink" href="/jobs" className="nav-link jobs-link">Jobs</a>
+          <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="contactLink" href="/#contact" className="nav-link contact-link">Contact</a>
           
         </div>
