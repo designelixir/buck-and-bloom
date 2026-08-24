@@ -9,9 +9,9 @@ export default function Jobs() {
           
           <h1 className="centered-text" style={{marginTop: '50px'}}>Work with Us</h1>
           <p className="header-description">We are hiring! Join our enthusiastic team here at Buck & Bloom. Please review the job requirements carefully, and click Details to apply!</p>
-          {/* <h3 className="red-text">Sorry, no job postings available at this time. Check back later, or follow us on <Link target="_blank" href="https://instagram.com/buckandbloomcheese">Instagram!</Link></h3> */}
+          <h3 className="red-text">Sorry, no job postings available at this time. Check back later, or follow us on <Link target="_blank" href="https://instagram.com/buckandbloomcheese">Instagram!</Link></h3>
           <div className="flex-center-center flex-wrap" style={{marginBottom: '50px'}}>
-            <div className="event box-shadow basic-padding" style={{maxWidth: 'unset'}}>
+            {/* <div className="event box-shadow basic-padding" style={{maxWidth: 'unset'}}>
                 <h2 style={{fontFamily: 'var(--native-record)', fontSize: '32px'}}>Assistant Cheesemaker</h2>
                 <p><strong>Schedule: </strong>Fridays - Tuesdays, 9:00 AM - 4:00 PM </p>
                 <p><strong>Starting Pay: </strong>$18.50 to $20/hour, depending on experience</p>
@@ -59,7 +59,7 @@ export default function Jobs() {
                     <button style={{marginTop: '25px'}}>Apply</button>
                   </a>
                 
-            </div>
+            </div> */}
 
             {/* <div className="event box-shadow basic-padding" style={{maxWidth: 'unset'}}>
                 <h2 style={{fontFamily: 'var(--native-record)', fontSize: '32px'}}>Mountain Market Cheesemonger</h2>
