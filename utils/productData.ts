@@ -10,7 +10,7 @@ export const productsData = [
     title: 'Thanksgiving Cheese Board Bundle',
     description1: `Gather with your family this holiday season and enjoy a selection of our delicious Colorado-made artisanal cheeses! We've chosen a wonderful variety of spreadable, soft and creamy, and hard cheeses to make any charcuterie board complete.`,
     description2: `Gourmet Colorado-made crackers and salami are included to pair perfectly with our cheeses. The bundle will be ready to cut and assemble and will be enough to feed 8-12 people.<br>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI9CDQvj6d7pLFkRlBRP13ch5-eVjwQK-K60TcBuJJDuhJaw/viewform?usp=header" target="_blank" class="red-text no-link-styling"><strong>Locals - you can purchase this bundle in person after November 16th! Click here to reserve your bundle.</strong></a>`,
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI9CDQvj6d7pLFkRlBRP13ch5-eVjwQK-K60TcBuJJDuhJaw/viewform?usp=header" target="_blank" class="red-text no-link-styling"><strong>Locals- reserve your bundles today. Pick up and purchase from the farm November 16th-20th. Click here to reserve your bundle.</strong></a>`,
     fullDescription: `
     <p><strong>All orders will ship on November 16th to arrive with ample time before Thanksgiving.</strong> 
         Please select a shipping options with 2 business days or less estimate to ensure the cheese stays cold. For most Colorado orders, UPS Ground will be sufficient. <br><br>
