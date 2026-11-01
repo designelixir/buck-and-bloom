@@ -1,6 +1,8 @@
 export interface ProductCardProps {
   id: string;
-  shopifyProductId: string;
+  shopifyProductId?: string;
+  buttonLink?: string; // used when there is no shopifyProductId
+  buttonText?: string;
   title: string;
   subtitle?: string;
   description1: string | React.ReactNode;
@@ -13,7 +15,10 @@ export interface ProductCardProps {
 
 export interface Product {
   id: string;
-  shopifyProductId: string;
+  showProduct: boolean;
+  shopifyProductId?: string;
+  buttonLink?: string; // used when there is no shopifyProductId
+  buttonText?: string;
   title: string;
   subtitle: string;
   description1: string;

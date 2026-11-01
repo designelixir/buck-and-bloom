@@ -35,7 +35,7 @@ export default function Nav() {
     onEnterBack: () => gsap.to(".nav-inner", { minHeight: "170px", duration: 0.3, ease: "power2.out" }),
   });
 }, [animationDone]);
-const applyLink = '/tour'
+const applyLink = '/shop/thanksgiving-cheese-board-bundle'
 
   return (
     <>
@@ -44,7 +44,7 @@ const applyLink = '/tour'
       <div className="flex-center-spacebetween no-flex-grow full-width announcement-bar-inner">
         <div style={{ width: '75px' }}></div>
         <Link href={applyLink} target="_blank" className="no-link-styling">
-          <p className="centered-text"> <strong>Come tour the farm! </strong>Meet our goats, see our cheesemaking facilities, and try our cheese! Click here to book.</p>
+          <p className="centered-text"> <strong>Pre-order our Thanksgiving Cheese Board Bundle by November 16th! </strong>Click here for details and to purchase or reserve your bundle.</p>
         </Link>
         <button onClick={(e) => e.currentTarget.closest('.announcement-bar-inner')?.parentElement?.classList.add('announcement-bar-hide')} className="close-button no-hover-grow" aria-label="Close announcement">&times;</button>
       </div>
@@ -54,8 +54,7 @@ const applyLink = '/tour'
       <div className="nav-inner flex-center-spacebetween full-width">
         <div className="desktop flex-center-spacebetween mobile-hide">
           
-          {/* <a id="shopLink" href="/shop/local-cheese-share" className="nav-link shop-link">Cheese Share</a>
-          <Image src="/flora.svg" alt="floral detail" height={25} width={25} /> */}
+          
           <a id="marketsLink" href="/#markets" className="nav-link markets-link">Markets</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="visitLink" href="/#visit-us" className="nav-link visit-us-link">Visit Us</a>
@@ -83,7 +82,9 @@ const applyLink = '/tour'
           
            <a id="tourLink" href="/tour" className="nav-link shop-link">Tour the Farm</a>
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
-          <a id="jobsLink" href="/jobs" className="nav-link jobs-link">Jobs</a>
+          {/* <a id="jobsLink" href="/jobs" className="nav-link jobs-link">Jobs</a> */}
+          <a id="shopLink" href="/shop" className="nav-link shop-link">Shop</a>
+          
           <Image src="/flora.svg" alt="floral detail" height={25} width={25} />
           <a id="contactLink" href="/#contact" className="nav-link contact-link">Contact</a>
           

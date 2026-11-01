@@ -1,11 +1,26 @@
-import Image from "next/image";
+"use client"
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { MarketEvent } from "@/types/globalTypes";
 import { MarketGridProps } from "@/types/globalTypes";
 
-export default function MarketGrid({ events = [] }: MarketGridProps) {
-    
-    if (events.length === 0) {
+// Show a market unless show is false or its endDate has passed
+function isActive(event: MarketEvent, now: number | null) {
+    if (event.show === false) return false;
+    if (!event.endDate) return true;
+    if (now === null) return false;
+    return now <= new Date(event.endDate).getTime();
+}
+
+export default function MarketGrid({ events = [], heading, hideWhenEmpty = false }: MarketGridProps) {
+    // Read the current time after mount so the static build date doesn't get baked into the page
+    const [now, setNow] = useState<number | null>(null);
+    useEffect(() => setNow(Date.now()), []);
+
+    const activeEvents = events.filter((event) => isActive(event, now));
+
+    if (activeEvents.length === 0) {
+        if (hideWhenEmpty) return null;
         return (
             <div className="flex-center-center">
                 <p className="centered-text">No upcoming events at this time. Check back soon!</p>
@@ -14,9 +29,10 @@ export default function MarketGrid({ events = [] }: MarketGridProps) {
     }
 
     return (
-        <>
+        <div className={heading ? "basic-padding-top-bottom" : undefined}>
+            {heading && <h4 className="centered-text red-text basic-padding-top-bottom">{heading}</h4>}
             <div className="flex-start-center flex-wrap market-grid">
-                {events.map((event, index) => (
+                {activeEvents.map((event, index) => (
                     <div key={index} className="event box-shadow flex-center-center basic-bg flex-column" style={{maxWidth: event.showDate ? '25%' : '35%'}}>
                         <div className="date-tag-wrapper flex-start-start no-flex-grow" style={{ backgroundImage: event.eventImage}}>
                              <span className="date-tag" style={{ backgroundColor: event.showDate ? "var(--redorange)" : "var(--orange)" }}>{event.eventType}</span>
@@ -31,13 +47,15 @@ export default function MarketGrid({ events = [] }: MarketGridProps) {
                                 <p className="centered-text no-text-spacing">{event.time}</p>
                             </div>
                             
-                            <Link className="flex-center-center" href={event.detailsUrl} target="_blank">
-                                <button className="black-button small-button">Details</button>
-                            </Link>
+                            {event.detailsUrl && (
+                                <Link className="flex-center-center" href={event.detailsUrl} target="_blank">
+                                    <button className="black-button small-button">Details</button>
+                                </Link>
+                            )}
                         </div>
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }

@@ -13,7 +13,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
   useEffect(() => {
     // Find the product that matches the URL id
-    const foundProduct = productsData.find(p => p.id === resolvedParams.id);
+    const foundProduct = productsData.find(p => p.id === resolvedParams.id && p.showProduct);
     setProduct(foundProduct);
   }, [resolvedParams.id]);
 
@@ -32,7 +32,6 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
   return (
     <main className="flex-center-center flex-column fade-in">
-      <Nav></Nav>
       <section className="shop-header basic-padding flex-center-center flex-column">
         <Link className="no-link-styling" href="/shop"><h3 className="red-text native-record">&larr; Back to Shop</h3></Link>
         <div style={{padding: '25px 10px'}} className="centered-text">
@@ -46,14 +45,13 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         {product.subtitle && <h2 className="product-page-subtitle no-text-spacing">{product.subtitle}</h2>}
         <div className="centered-text" dangerouslySetInnerHTML={{ __html: `${product.description1} ${product.description2}` }} />
         <p className="centered-text product-card-price">{product.price}</p>
-        {/* <ShopifyBuyButton shopifyProductId={product.shopifyProductId} id={product.id} /> */}
-
-    <a 
-  className="button no-link-styling" 
-  href="https://pci.jotform.com/form/253620534862053"
->
-  Sign up for Cheese Share
-</a>
+        {product.shopifyProductId ? (
+          <ShopifyBuyButton shopifyProductId={product.shopifyProductId} id={product.id} />
+        ) : product.buttonLink && (
+          <a className="button no-link-styling" href={product.buttonLink}>
+            {product.buttonText}
+          </a>
+        )}
         </div>
       </section>
       <section className="basic-padding">

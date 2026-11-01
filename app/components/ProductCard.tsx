@@ -17,7 +17,7 @@ export default function ProductCard({ id, title, description1, price, mainImage 
       <p className="product-card-description">{description1}</p>
       
       
-      <div className="flex-center-center flex-column">
+      <div className="flex-start-start flex-column">
       <Link href={`/shop/${id}`} className="red-text"><button>Click for Details </button></Link>  
       </div>
     </div>

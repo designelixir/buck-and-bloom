@@ -192,7 +192,7 @@ header {width: 100%; }
 
 /* Shop Page */
 .shop-header { margin-top: 200px; }
-.product-card {min-width: 350px; max-width: 500px; width: 100%; background: var(--tan); padding: 15px; border-radius: 8px; margin: 10px;}
+.product-card {min-width: 350px; max-width: 500px; width: 100%; background: var(--parchment); padding: 15px; border-radius: 8px; margin: 10px;}
 .product-card-image {width: 100%; height: 300px; position: relative; margin-bottom: 15px; overflow: hidden; border-radius: 4px;}
 .product-card-price {color: var(--red); font-size: 18px; font-weight: 700;}
 .product-card-description {color: #666; font-size: 14px; margin-bottom: 12px;}
@@ -257,8 +257,8 @@ div::-webkit-scrollbar { display: none; }
 .about-text-wrapper-2 {margin-top: -50px;}
 
 .greg {background-image: url('/cutouts/greg-2-outlined.png'); width: 45vw; margin-left: -5vw; z-index: 2; aspect-ratio: 315/330;  }
-.staff {background-image: url('/cutouts/staff-cutout.png'); width: 33vw; aspect-ratio: 290/450; margin-left: -25vw; z-index: 1; }
-.staff-2 {background-image: url('/cutouts/staff-2-cutout.png'); width: 42vw; aspect-ratio: 380/325; margin-left: -15vw; z-index: 2;  }
+.staff {background-image: url('/cutouts/blast.png'); width: 25vw; background-size: 75%; background-position: center; aspect-ratio: 3/5; margin-bottom: 20vh; margin-left: -20vw; z-index: 1; }
+.staff-2 {background-image: url('/cutouts/staff-2-cutout.png'); width: 42vw; aspect-ratio: 380/325; margin-left: -10vw; z-index: 2;  }
 .amanda {background-image: url('/cutouts/amanda-outlined.png'); z-index: 0; width: 30vw; margin-left: -28vw; margin-top: -10vw; aspect-ratio: 290/486; }
 .jade {background-image: url('/cutouts/jade-cutout.png'); width: 40vw; aspect-ratio: 316/350; margin-left: -20vw;   z-index: 2;}
 .rhonda {background-image: url('/cutouts/rhonda-outlined.png'); width: 20vw; margin-left: -15vw;  aspect-ratio: 178/218; z-index: 1; }
@@ -284,7 +284,8 @@ div::-webkit-scrollbar { display: none; }
 }
 
 /* Contact Card */
-.contact-wrapper {background-image: url('/redorange-textured.png'); background-size: 100% 100%; color: var(--parchment); padding: var(--pad) var(--pad) 0; }
+.contact-wrapper {background-image: url('/redorange-textured.png'); background-size: 100% 100%; color: var(--parchment);  }
+.lily-bg {background-image: url('/lily-detail-transparent.png'); background-size: contain; background-repeat: no-repeat; background-position: center 100%; padding: var(--pad);}
 
 .slide-in-top{-webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) backwards;animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) backwards}
 @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}

@@ -19,14 +19,11 @@ export default function Markets({ events = [] }: MarketGridProps) {
             </div>
             
             <div>
-                <h3 className="centered-text" style={{marginBottom: '25px'}}>For more markets and to keep up with the farm, follow us on Instagram, or <Link href="/mailing-list">join our mailing list.</Link></h3>
-                {/* <h4 className="centered-text red-text basic-padding-top-bottom">Farmer's Markets</h4> */}
-                <MarketGrid events={marketData} />
+                <h3 className="centered-text" >For more markets and to keep up with the farm, follow us on Instagram, or <Link href="/mailing-list">join our mailing list.</Link></h3>
+                <MarketGrid  heading="Farmer's Markets" hideWhenEmpty events={marketData} />
+                <MarketGrid events={eventData} heading="Holiday Markets & Events" hideWhenEmpty />
             </div>
-            {/* <div className="basic-padding-top-bottom">
-                <h4 className="centered-text red-text basic-padding-top-bottom">Holiday Markets &amp; Events</h4>
-                <MarketGrid events={eventData} />
-            </div> */}
+            
             
         </section>
     )
