@@ -44,7 +44,7 @@ const applyLink = '/shop/thanksgiving-cheese-board-bundle'
       <div className="flex-center-spacebetween no-flex-grow full-width announcement-bar-inner">
         <div style={{ width: '75px' }}></div>
         <Link href={applyLink} target="_blank" className="no-link-styling">
-          <p className="centered-text"> <strong>Pre-order our Thanksgiving Cheese Board Bundle by November 16th! </strong>Click here for details and to purchase or reserve your bundle.</p>
+          <p className="centered-text"> <strong>Pre-order our Thanksgiving Cheese Board Bundle by November 15th at midnight! </strong>Click here for details and to purchase or reserve your bundle.</p>
         </Link>
         <button onClick={(e) => e.currentTarget.closest('.announcement-bar-inner')?.parentElement?.classList.add('announcement-bar-hide')} className="close-button no-hover-grow" aria-label="Close announcement">&times;</button>
       </div>
