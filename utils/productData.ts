@@ -2,10 +2,12 @@ import { Product } from "./Types";
 // Each product uses either shopifyProductId (shows the Shopify buy button)
 // or buttonLink + buttonText (shows a regular link button) instead.
 // Only products with showProduct: true appear in the shop.
+// featured: true highlights a product in the homepage hero (the first one wins).
 export const productsData = [
   {
     id: 'thanksgiving-cheese-board-bundle',
     showProduct: true,
+    featured: true,
     shopifyProductId: '16229246075183',
     title: 'Thanksgiving Cheese Board Bundle',
     description1: `Gather with your family this holiday season and enjoy a selection of our delicious Colorado-made artisanal cheeses! We've chosen a wonderful variety of spreadable, soft and creamy, and hard cheeses to make any charcuterie board complete.`,
@@ -35,7 +37,6 @@ export const productsData = [
     images: [
     '/products/ThanksgivingCheeseBoard/thanksgiving-cheese-bundle-1.jpg',
     '/products/ThanksgivingCheeseBoard/thanksgiving-cheese-bundle-4.mp4',
-    '/products/ThanksgivingCheeseBoard/thanksgiving-cheese-bundle-2.jpg',
     '/products/ThanksgivingCheeseBoard/thanksgiving-cheese-bundle-3.jpg',
     ]
     },

@@ -294,3 +294,15 @@ div::-webkit-scrollbar { display: none; }
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 
+
+
+/* Product Hero */
+.product-hero {padding: 50px 2.5vw;}
+.product-hero-card {max-width: 1100px; width: 100%; background: var(--parchment); border-radius: 8px; overflow: hidden; align-items: stretch;}
+.product-hero-image {position: relative; flex: 1 1 50%; min-height: 450px;}
+.product-hero-content {flex: 1 1 50%; padding: clamp(25px, 4vw, 60px); align-items: flex-start;}
+.product-hero-eyebrow {font-size: 32px;}
+@media only screen and (max-width: 800px) {
+  .product-hero-card {flex-direction: column;}
+  .product-hero-image {min-height: 300px; flex-basis: auto;}
+}

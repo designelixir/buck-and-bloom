@@ -16,6 +16,7 @@ export interface ProductCardProps {
 export interface Product {
   id: string;
   showProduct: boolean;
+  featured?: boolean;
   shopifyProductId?: string;
   buttonLink?: string; // used when there is no shopifyProductId
   buttonText?: string;

@@ -31,7 +31,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
   }
 
   return (
-    <main className="flex-center-center flex-column fade-in">
+    <main className="flex-center-center flex-column fade-in"  style={{padding:'var(--pad) clamp(50px, 25px + 5vw, 15vw)'}}>
       <section className="shop-header basic-padding flex-center-center flex-column">
         <Link className="no-link-styling" href="/shop"><h3 className="red-text native-record">&larr; Back to Shop</h3></Link>
         <div style={{padding: '25px 10px'}} className="centered-text">
@@ -54,7 +54,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         )}
         </div>
       </section>
-      <section className="basic-padding">
+      <section>
         <h3 className="red-text native-record">Additional Product Details</h3>
         <div dangerouslySetInnerHTML={{ __html: product.fullDescription }} />
       </section>

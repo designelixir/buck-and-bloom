@@ -1,5 +1,6 @@
 import HeroText from "./components/HeroText"
 import Markets from "./components/Markets"
+import ProductHero from "./components/ProductHero"
 import VisitUs from "./components/VisitUs"
 import About from "./components/About"
 import Contact from "./components/Contact"
@@ -9,6 +10,7 @@ export default function Homepage2(){
 
             <main className="full-width">
                 <HeroText></HeroText>
+                <ProductHero/>
                 <Markets/>
                 <VisitUs></VisitUs>
                 <About></About>
