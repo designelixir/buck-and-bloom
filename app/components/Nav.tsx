@@ -39,7 +39,8 @@ const applyLink = '/shop/thanksgiving-cheese-board-bundle'
 
   return (
     <>
-    {/* Announcement bar - comment out to hide */}
+    {/* Announcement bar - comment out to hide 
+    
     <div className="announcement-bar-container slide-in-top flex-start-start no-flex-grow">
       <div className="flex-center-spacebetween no-flex-grow full-width announcement-bar-inner">
         <div style={{ width: '75px' }}></div>
@@ -49,6 +50,8 @@ const applyLink = '/shop/thanksgiving-cheese-board-bundle'
         <button onClick={(e) => e.currentTarget.closest('.announcement-bar-inner')?.parentElement?.classList.add('announcement-bar-hide')} className="close-button no-hover-grow" aria-label="Close announcement">&times;</button>
       </div>
     </div>
+    
+    \*/}
     
     <nav className={`fade-in flex-start-center flex-column slide-in-top`}>
       <div className="nav-inner flex-center-spacebetween full-width">

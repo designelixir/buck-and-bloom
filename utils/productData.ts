@@ -6,7 +6,7 @@ import { Product } from "./Types";
 export const productsData = [
   {
     id: 'thanksgiving-cheese-board-bundle',
-    showProduct: true,
+    showProduct: false,
     featured: true,
     shopifyProductId: '16229246075183',
     title: 'Thanksgiving Cheese Board Bundle',

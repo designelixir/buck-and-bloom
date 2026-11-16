@@ -5,7 +5,7 @@ export default function ProductGrid() {
   const visibleProducts = productsData.filter((product) => product.showProduct);
 
   if (visibleProducts.length === 0) {
-    return <div className="flex-center-center"><h3 className="centered-text">No products for sale online, check back later!</h3></div>;
+    return <div className="flex-center-center red-text basic-padding-top-bottom"><h3 className="centered-text">No products for sale online, check back later!</h3></div>;
   }
 
   return (
