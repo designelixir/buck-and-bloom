@@ -66,7 +66,7 @@ export const productsData = [
         </ul> 
     `, 
         price: '$89.99',
-        mainImage: '/products/HolidayCheeseboard/holiday-cheese.jpg',
+        mainImage: '/products/HolidayCheeseBoard/holiday-cheese.jpg',
         images: [
         '/products/HolidayCheeseBoard/cheese-labeled.jpg',
         '/products/HolidayCheeseBoard/holiday-cheese.jpg',
