@@ -68,9 +68,9 @@ export const productsData = [
         price: '$89.99',
         mainImage: '/products/HolidayCheeseboard/holiday-cheese.jpg',
         images: [
-        '/products/HolidayCheeseboard/cheese-labeled.jpg',
-        '/products/HolidayCheeseboard/holiday-cheese.jpg',
-        '/products/HolidayCheeseboard/holiday-cheese-board.mp4'
+        '/products/HolidayCheeseBoard/cheese-labeled.jpg',
+        '/products/HolidayCheeseBoard/holiday-cheese.jpg',
+        '/products/HolidayCheeseBoard/holiday-cheese-board.mp4'
         ]
     },
     {
