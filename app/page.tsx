@@ -10,7 +10,7 @@ export default function Homepage2(){
 
             <main className="full-width">
                 <HeroText></HeroText>
-                {/* <ProductHero/> */}
+                <ProductHero/>
                 <Markets/>
                 <VisitUs></VisitUs>
                 <About></About>
